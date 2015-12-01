@@ -1,0 +1,3 @@
+Here are some websites/blogs which inspired and motivated this concept in me.
+https://kartikkukreja.wordpress.com/2013/12/02/range-updates-with-bit-fenwick-tree/
+http://zobayer.blogspot.in/2013/11/various-usage-of-bit.html
