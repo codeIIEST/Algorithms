@@ -6,19 +6,19 @@ layout: default
 
   <h1 class="page-heading">Categories</h1>
   
-  <div class="category" onclick="location.href='{{ site.url  }}/about/';">
+  <div class="category" onclick="location.href='{%link pages/searching.html %}';">
       <h3><b>Searching</b></h3>
       Searching an element from a set of elements
   </div>
-  <div class="category" onclick="location.href='about.md';">
+  <div class="category" onclick="location.href='{%link pages/sorting.html %}';">
       <h3><b>Sorting</b></h3>
       Sorting a set of elements in a particular order
   </div>
-  <div class="category" onclick="location.href='about.md';">
+  <div class="category" onclick="location.href='{%link pages/stackq.html %}';">
       <h3><b>Stack and Queue</b></h3>
       Algorithms that require FIFO or LIFO processing        
   </div>
-  <div class="category" onclick="location.href='about.md';">
+  <div class="category" onclick="location.href='{%link pages/trees.html %}';">
       <h3><b>Trees</b></h3>
       Segment trees, BITs and other algorithms for interval processing and searching   
   </div>
@@ -26,11 +26,11 @@ layout: default
       <h3><b>Graphs</b></h3>
       Modelling real life problems as a set of vertices and links between them
   </div> 
-  <div class="category">
+  <div class="category" onclick="location.href='{%link pages/dp.html %}';">
       <h3><b>Greedy and Dynamic Programming</b></h3>
       Solving a bigger problem through solution of subproblems
   </div>
-  <div class="category">
+  <div class="category" onclick="location.href='{%link pages/others.html %}';">
       <h3><b>Others</b></h3>
       Any algorithm that doesn't come under the above categories
   </div>

@@ -180,11 +180,24 @@
   > li {
     margin-bottom: $spacing-unit;
   }
+  h2
+  {
+      margin: 15px 0px 0px 0px;
+  }
 }
 
 .post-meta {
   font-size: $small-font-size;
   color: $grey-color;
+  //margin-bottom: 5px;
+  float: left;
+}
+
+.post-author {
+    font-size: $small-font-size;
+    color: $grey-color;
+    //margin-bottom: 5px;
+    float: right;
 }
 
 .post-link {
@@ -192,20 +205,28 @@
   font-size: 24px;
 }
 
-
+.post-excerpt {
+    float: left;
+}
 
 /**
  * Posts
  */
+.post {
+    p {
+        margin: 0px;
+    }
+}
+
 .post-header {
   margin-bottom: $spacing-unit;
 }
 
 .post-title {
-  font-size: 42px;
+  font-size: 30px;
   letter-spacing: -1px;
   line-height: 1;
-
+  font-weight: 800;
   @include media-query($on-laptop) {
     font-size: 36px;
   }
@@ -213,7 +234,8 @@
 
 .post-content {
   margin-bottom: $spacing-unit;
-
+  float: left;
+  padding-top: 15px;
   h2 {
     font-size: 32px;
 
