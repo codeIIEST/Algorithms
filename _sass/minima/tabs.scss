@@ -1,0 +1,26 @@
+div
+{
+    .category
+    {
+        border: 2px solid;
+        border-radius: 7px;
+        float: left;
+        text-align: left;
+        width: -webkit-calc(80%);
+        width: calc(80%);
+        background: #D3D3D3;
+        padding: 10px 5px 10px 20px;
+        box-shadow: 5px 5px 2px #888888;
+        margin: 5px 10% 5px 10%;
+        font-size: 12px;
+        h3 {
+            margin: 0px;
+        }
+    }
+    .category:hover
+    {
+        width: -webkit-calc(82%);
+        width: calc(82%);
+        padding: 11px 5px 11px 21px;
+    }
+}
