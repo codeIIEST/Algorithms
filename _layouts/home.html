@@ -5,32 +5,38 @@ layout: default
 <div class="home">
 
   <h1 class="page-heading">Categories</h1>
-  {% assign searchurl="/pages/searching.html" %} 
+  {% assign searchurl="/pages/searching.html" %}
+  {% assign sorturl="/pages/sorting.html" %}
+  {% assign stackurl="/pages/stackq.html" %}
+  {% assign treeurl="/pages/trees.html" %}
+  {% assign graphurl="/pages/graph.html" %}
+  {% assign dpurl="/pages/dp.html" %}
+  {% assign otherurl="/pages/others.html" %}
   <div class="category" onclick="location.href='{{ searchurl | prepend:site.baseurl }}';">
       <h3><b>Searching</b></h3>
       Searching an element from a set of elements
   </div>
-  <div class="category" onclick="location.href='{%link pages/sorting.html %}';">
+  <div class="category" onclick="location.href='{{ sorturl | prepend:site.baseurl }}';">
       <h3><b>Sorting</b></h3>
       Sorting a set of elements in a particular order
   </div>
-  <div class="category" onclick="location.href='{%link pages/stackq.html %}';">
+  <div class="category" onclick="location.href='{{ stackurl | prepend:site.baseurl }}';">
       <h3><b>Stack and Queue</b></h3>
       Algorithms that require FIFO or LIFO processing        
   </div>
-  <div class="category" onclick="location.href='{%link pages/trees.html %}';">
+  <div class="category" onclick="location.href='{{ treeurl | prepend:site.baseurl }}';">
       <h3><b>Trees</b></h3>
       Segment trees, BITs and other algorithms for interval processing and searching   
   </div>
-  <div class="category" onclick="location.href='{%link pages/graph.html %}';">
+  <div class="category" onclick="location.href='{{ graphurl | prepend:site.baseurl }}';">
       <h3><b>Graphs</b></h3>
       Modelling real life problems as a set of vertices and links between them
   </div> 
-  <div class="category" onclick="location.href='{%link pages/dp.html %}';">
+  <div class="category" onclick="location.href='{{ dpurl | prepend:site.baseurl }}';">
       <h3><b>Greedy and Dynamic Programming</b></h3>
       Solving a bigger problem through solution of subproblems
   </div>
-  <div class="category" onclick="location.href='{%link pages/others.html %}';">
+  <div class="category" onclick="location.href='{{ otherurl | prepend:site.baseurl }}';">
       <h3><b>Others</b></h3>
       Any algorithm that doesn't come under the above categories
   </div>
