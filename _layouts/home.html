@@ -5,8 +5,8 @@ layout: default
 <div class="home">
 
   <h1 class="page-heading">Categories</h1>
-  
-  <div class="category" onclick="location.href='{%link pages/searching.html %}';">
+  {% assign searchurl="/pages/searching.html" %} 
+  <div class="category" onclick="location.href='{{ searchurl | prepend:site.url }}';">
       <h3><b>Searching</b></h3>
       Searching an element from a set of elements
   </div>
