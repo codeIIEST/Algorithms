@@ -4,21 +4,34 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="page-heading">Categories</h1>
   
-  {{ content }}
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-
+  <div class="category" onclick="location.href='{{ site.url  }}/about/';">
+      <h3><b>Searching</b></h3>
+      Searching an element from a set of elements
+  </div>
+  <div class="category" onclick="location.href='about.md';">
+      <h3><b>Sorting</b></h3>
+      Sorting a set of elements in a particular order
+  </div>
+  <div class="category" onclick="location.href='about.md';">
+      <h3><b>Stack and Queue</b></h3>
+      Algorithms that require FIFO or LIFO processing        
+  </div>
+  <div class="category" onclick="location.href='about.md';">
+      <h3><b>Trees</b></h3>
+      Segment trees, BITs and other algorithms for interval processing and searching   
+  </div>
+  <div class="category">
+      <h3><b>Graphs</b></h3>
+      Modelling real life problems as a set of vertices and links between them
+  </div> 
+  <div class="category">
+      <h3><b>Greedy and Dynamic Programming</b></h3>
+      Solving a bigger problem through solution of subproblems
+  </div>
+  <div class="category">
+      <h3><b>Others</b></h3>
+      Any algorithm that doesn't come under the above categories
+  </div>
 </div>
