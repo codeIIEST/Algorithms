@@ -1,4 +1,8 @@
+---
+
 ## Graphs
+
+date: 2016-12-27 09:32:05
 
 Graphs can be used to represent many problems in computer science, so this section is long, like trees and sorting were.
 
@@ -59,3 +63,8 @@ Graphs can be used to represent many problems in computer science, so this secti
         - [ ] count connected components in a graph
         - [ ] list strongly connected components
         - [ ] check for bipartite graph
+
+
+Author : Prateek Chanda
+
+---
