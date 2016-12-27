@@ -1,4 +1,10 @@
-### Data Structures
+
+---
+
+### Data Structures (Stacks and Queues)
+
+date:2016-12-27 09:58:13
+
 
 - ### Stack
     - [ ] [Stacks (video)](https://www.coursera.org/learn/data-structures/lecture/UdKzQ/stacks)
@@ -25,3 +31,8 @@
         - enqueue: O(1) (amortized, linked list and array [probing])
         - dequeue: O(1) (linked list and array)
         - empty: O(1) (linked list and array)
+
+
+Author : Prateek Chanda
+
+---
