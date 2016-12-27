@@ -188,3 +188,8 @@ date : 2016-12-27 09:50:14
         - binary trees are a 2-ary tree, with branching factor = 2
         - 2-3 trees are 3-ary
     - [ ] [K-Ary Tree](https://en.wikipedia.org/wiki/K-ary_tree)
+
+
+Author : Prateek Chanda
+
+---
