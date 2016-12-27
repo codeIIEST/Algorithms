@@ -1,4 +1,8 @@
+---
+
 ## Trees
+
+date : 2016-12-27 09:50:14
 
 - ### Trees - Notes & Background
     - [ ] [Series: Core Trees (video)](https://www.coursera.org/learn/data-structures-optimizing-performance/lecture/ovovP/core-trees)
