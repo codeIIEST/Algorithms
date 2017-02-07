@@ -1,6 +1,4 @@
----
-
-## Sorting
+### Sorting
 
 date: 2016-12-27 08:28:45
 
@@ -70,4 +68,3 @@ date: 2016-12-27 08:28:45
 Author : Prateek Chanda
 
 ---
-
