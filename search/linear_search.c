@@ -1,21 +1,22 @@
 #include <stdio.h>
- 
+#include <stdlib.h>
 int main()
 {
-   int array[100], search, c, n;
+   int *array, search, c, n_terms;
  
    printf("Enter the number of elements in array\n");
-   scanf("%d",&n);      // Total no of elements
+   scanf("%d",&n_terms);      // Total no of elements
  
-   printf("Enter %d integer(s)\n", n);
+   array = (int*)malloc(sizeof(int)*n_terms);
+   printf("Enter %d integer(s)\n", n_terms);
  
-   for (c = 0; c < n; c++)
+   for (c = 0; c < n_terms; c++)
       scanf("%d", &array[c]);    //  Reading the elements
  
    printf("Enter the number to search\n");   // Target element to be searched
    scanf("%d", &search);
  
-   for (c = 0; c < n; c++)
+   for (c = 0; c < n_terms; c++)
    {
       if (array[c] == search)     /* if required element found */
       {
@@ -23,7 +24,7 @@ int main()
          break;
       }
    }
-   if (c == n)
+   if (c == n_terms)
       printf("%d is not present in array.\n", search);   // Element not found
  
    return 0;
