@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 
+void swap(int*,int*);
 
 void bubblesort(int arr[], int size)
 {
@@ -39,6 +40,7 @@ int main()
  
     for (i = 0; i < size; i++)
         printf(" %d ", array[i]);
+    printf(" ");
     return 0;
  
 }
