@@ -7,9 +7,9 @@
 void bubblesort(int arr[], int size)
 {
     int i, j;
-    for (i = 0;  i < size; i++)     //  Function where the actual algorithm is implemented
+    for (i = 0;  i < size - 1; i++)     //  Function where the actual algorithm is implemented
     {
-        for (j = 0; j < size - i; j++)
+        for (j = 0; j < size - i - 1; j++)
         {
             if (arr[j] > arr[j+1])
                 swap(&arr[j], &arr[j+1]);
