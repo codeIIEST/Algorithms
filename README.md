@@ -3,7 +3,8 @@ A Repository to store implementation of some of the famous Data Structures and A
 
 <br/>
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/027cc235e9024d4da77ebd358ca7becf)](https://www.codacy.com/app/prateekkol21/Algorithms?utm_source=github.com&utm_medium=referral&utm_content=codeIIEST/Algorithms&utm_campaign=badger)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/027cc235e9024d4da77ebd358ca7becf)](https://www.codacy.com/app/prateekkol21/Algorithms?utm_source=github.com&utm_medium=referral&utm_content=codeIIEST/Algorithms&utm_campaign=badger) [![Build status](https://ci.appveyor.com/api/projects/status/i6utrnqnasqguk2i?svg=true)](https://ci.appveyor.com/project/prateekiiest/algorithms)
+
 [![Join the chat at https://gitter.im/codeIIEST/Algorithms](https://badges.gitter.im/codeIIEST/Algorithms.svg)](https://gitter.im/codeIIEST/Algorithms?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 
