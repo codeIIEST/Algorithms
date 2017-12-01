@@ -2,6 +2,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+
 // Function to Merge Arrays L and R into A. 
 // lefCount = number of elements in L
 // rightCount = number of elements in R. 
