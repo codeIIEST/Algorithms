@@ -7,15 +7,20 @@ void swap(int*,int*);
 
 void bubblesort(int arr[], int size)
 {
-    int i, j;
+    int i, j, flag;
     for (i = 0;  i < size - 1; i++)     //  Function where the actual algorithm is implemented
     {
+        flag=1;                         
         for (j = 0; j < size - i - 1; j++)
         {
             if (arr[j] > arr[j+1])
+            {
+                flag=0;
                 swap(&arr[j], &arr[j+1]);
- 
+            } 
         }
+        if(flag==1)                     //   No change in vlaue of flag depicts that the array has been sorted
+            break;
     }
 }
 void swap(int *a, int *b)
