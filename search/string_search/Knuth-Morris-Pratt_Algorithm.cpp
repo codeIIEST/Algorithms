@@ -8,11 +8,9 @@ int main()
 	string text;
 	string pattern;
 
-	cout<<"Enter the text : ";//inputting text
 	cin>>text;
 	cout<<endl;
 
-	cout<<"Enter the pattern : ";//inputting pattern
 	cin>>pattern;
 	cout<<endl;
 
