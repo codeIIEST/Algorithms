@@ -40,6 +40,6 @@ int main()
  
     countSort(arr);
  
-    printf("Sorted character array is %sn", arr);
+    printf("Sorted character array is %s", arr);
     return 0;
 }
