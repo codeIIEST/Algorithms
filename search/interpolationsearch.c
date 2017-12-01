@@ -38,7 +38,8 @@ int main()
 	// Array of items on which search will
 	// be conducted.
 
-	int n,arr[n];
+	int n;
+	int arr[]
 	scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
@@ -46,6 +47,7 @@ int main()
 	}
 
 	int x; // Element to be searched
+	scanf("%d",&x);
 	int index = interpolationSearch(arr, n, x);
 
 	// If element was found
