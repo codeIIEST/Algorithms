@@ -6,12 +6,13 @@ int main() {
  int n_terms, *arr, item, i, j, mid, top, bottom;
  
  
+ 
  printf("Enter how many elements you want:\n");   // no of elements
  scanf("%d", &n_terms);
  arr = (int*)malloc(sizeof(int)*n_terms);
  printf("Enter the %d elements in ascending order\n", n_terms);    
  for (i = 0; i < n_terms; i++) {
-  scanf("%d", &arr[i]);
+    scanf("%d", &arr[i]);
  }
  
  printf("\nEnter the item to  search\n");   // Target element to be searched
