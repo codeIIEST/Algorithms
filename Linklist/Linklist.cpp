@@ -2,7 +2,6 @@
 //All basic operations.
 #include<iostream>
 using namespace std;
-#include<conio.h>
 struct node{
 	int d;
 	node* next;
