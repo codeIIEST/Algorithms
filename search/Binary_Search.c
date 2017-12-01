@@ -21,7 +21,7 @@ int main() {
  top = n_terms;
  
  do {
-  mid = (bottom + top) / 2;
+  mid = bottom +  (top - bottom)/2 ; // same as (bottom + top / 2) but considers overflow condition when bottom + top might be larger than int 
   if (item < arr[mid])
    top = mid - 1;                            // Here we are dividing the array into two equal parts 
   else if (item > arr[mid])                   /* if target element > mid part of array , we do the search in the upper part of the array
