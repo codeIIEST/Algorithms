@@ -48,7 +48,7 @@ void Remove_Duplicates()
     	if(temp->data>=0)//Checking for +ve numbers
     	{
     		if(hasht[temp->data][0]==1)//If the number already visited
-    		prev->next=temp->next;    //Delete the number pointing prev to next of current(temp)
+    		prev->next=temp->next;    //Delete the element by pointing prev to next of current(temp)
     	else
     	{
     		hasht[temp->data][0]=1;  //If not visited, mark visited by making the entry to 1 in the hash table
