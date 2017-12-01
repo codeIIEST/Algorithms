@@ -247,7 +247,6 @@ void linklist::del_middle()
 //Delete a specific element from the list.
 void linklist::del(int x)
 {	
-	int flag=0;
 	//creating temporary node
 	node* temp = start;
 	node* t1;
@@ -261,6 +260,7 @@ void linklist::del(int x)
 	}
 	else
 	{
+		int flag=0;
 		//traversing to that node
 		while(temp->next!=NULL)
 		{
@@ -286,11 +286,12 @@ void linklist::sort()
 {
 	node* temp =start;
 	int len= count();
-	node* current_node;
+	
 	node* t;
 	//sorting whole list
 	while(len--)
 	{	
+		node* current_node;
 		current_node= temp;
 		t = temp;
 		while(t!=NULL)
