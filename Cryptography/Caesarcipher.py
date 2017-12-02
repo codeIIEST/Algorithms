@@ -21,14 +21,14 @@ def decrypt(message,key):
       ascii_vals_dec[i] = 90 - (90 - ascii_vals_dec[i] + key )%26
   decrypt_string = ''.join(chr(i) for i in ascii_vals_dec) # To get the decrypted string using the list of manipulated ASCII vals
   return decrypt_string
-  
+
 def caesar_cipher():
   message = raw_input("Enter text to be encrypted:")
   encrypt_string = encrypt(message,key)
   decrypt_string = decrypt(encrypt_string,key)
   print encrypt_string
   print decrypt_string
-    
+
 if __name__=="__main__":
   key = int(raw_input("By what value do you want to shift?"))
   caesar_cipher()
