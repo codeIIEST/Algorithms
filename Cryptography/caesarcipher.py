@@ -6,8 +6,6 @@ the decrypted string can be obtained by shifting the encrypted string to the lef
 The general purpose function takes care of both the left and the right shifts.
 Based on how the user uses it, he or she can encrypt and decrypt the data.
 """
-
-
 def encrypt_and_decrypt(string,shift,val): 
   ascii_vals=[ord(c) for c in string]                #To get a list of ASCII Values of each character in string
   if(shift == "right"):                              #When the text it shifted to the right
@@ -27,8 +25,7 @@ def encrypt_and_decrypt(string,shift,val):
       elif((ascii_vals[i]>97 and ascii_vals[i]<=122) or (ascii_vals[i]>65 and ascii_vals[i]<=90)):
         ascii_vals[i] = ascii_vals[i]
       elif(ascii_vals[i]<65 and ascii_vals[i]<90): #If the values in the list are greater than 65 and 90, we get it back b/w 97 and 122
-        ascii_vals[i] = 90 + (ascii_vals[i]-65) +1
-          
+        ascii_vals[i] = 90 + (ascii_vals[i]-65) +1         
   encrypt_or_decrypt_string = ''.join(chr(i) for i in ascii_vals) # To get the encrypted string using the list of manipulated ASCII vals
   print encrypt_or_decrypt_string
   
