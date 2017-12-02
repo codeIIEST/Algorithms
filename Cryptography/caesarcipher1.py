@@ -7,6 +7,8 @@ the decrypted string can be obtained by shifting the encrypted string to the lef
 
 def encrypt(message,key): 
   ascii_vals=[ord(c) for c in message]                #To get a list of ASCII Values of each character in string
+  i=0
+  while(i<len(ascii_vals)):
     ascii_vals[i] = ascii_vals[i] + key
     if(ascii_vals[i]>97 and ascii_vals[i]>122):  #If the values in the list are greater than 97 and 122, we get it back b/w 97 and 122
       ascii_vals[i] = 97 + (ascii_vals[i]-122) -1
@@ -14,6 +16,7 @@ def encrypt(message,key):
       ascii_vals[i] = ascii_vals[i]
     elif(ascii_vals[i]>65 and ascii_vals[i]>90):
       ascii_vals[i] = 65 + (ascii_vals[i]-90) -1 #If the values in the list are greater than 65 and 90, we get it back b/w 97 and 122
+    i+=1
   encrypt_string = ''.join(chr(i) for i in ascii_vals) # To get the encrypted string using the list of manipulated ASCII vals
   return encrypt_string
 def decrypt(message,key): 
