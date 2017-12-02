@@ -1,4 +1,4 @@
-// This C++ program solves the knapsack problem. A very famous Dynamic Programming problem.
+// This C++ program solves the 0-1 knapsack problem. A very famous Dynamic Programming problem.
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
