@@ -6,8 +6,8 @@ the decrypted string can be obtained by shifting the encrypted string to the lef
 The general purpose function takes care of both the left and the right shifts.
 Based on how the user uses it, he or she can encrypt and decrypt the data.
 """
-def encrypt_and_decrypt(string,shift,val): 
-  ascii_vals=[ord(c) for c in string]                #To get a list of ASCII Values of each character in string
+def encrypt_and_decrypt(inp,shift,val): 
+  ascii_vals=[ord(c) for c in inp]                #To get a list of ASCII Values of each character in string
   if(shift == "right"):                              #When the text it shifted to the right
     for i in range(0,len(ascii_vals)):
       ascii_vals[i] = ascii_vals[i] + val
@@ -30,10 +30,10 @@ def encrypt_and_decrypt(string,shift,val):
   print encrypt_or_decrypt_string
   
 def caesar_cipher():
-  string = raw_input("Enter text to be encrypted:")
+  inp = raw_input("Enter text to be encrypted:")
   encrypt_and_decrypt(string,shift,val) 
     
 if __name__=="__main__":
-  shift = str(raw_input("Do you want to shift to right or to left?"))
+  inp = str(raw_input("Do you want to shift to right or to left?"))
   val = int(raw_input("By what value do you want to shift?"))
   caesar_cipher()
