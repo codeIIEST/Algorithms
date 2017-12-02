@@ -2,33 +2,6 @@
 #include<cstring>
 using namespace std;
 
-
-
-/*
-Use of Radix Sort :
-Counting sort is a linear tine sorting algorithm that sort in O(n+k) time when elements are in range from 1 to k.
-
-What if the elements are in range from 1 to n2?
-We can’t use counting sort because counting sort will take O(n2) which is worse than comparison based sorting algorithms.
-Can we sort such an array in linear time?
-Radix Sort is the answer. The idea of Radix Sort is to do digit by digit sort starting from least significant digit to most significant digit. Radix sort uses counting sort as a subroutine to sort.
-*/
-
-/*Algo :
-The Radix Sort Algorithm
-1) Do following for each digit i where i varies from least significant digit to the most significant digit.
-………….a) Sort input array using counting sort (or any stable sort) according to the i’th digit.
-*/
-/* Complexity Analysis :
- O(d*(n+b)) time where b is the base for representing numbers, for example, for decimal system, b is 10.
-d is the no of digits = log2(n)
-b is the base          = 10
-Its more like O(18(n+10)) = O(N)
-
-Is Radix Sort preferable to Comparison based sorting algorithms like Quick-Sort?
-If we have \log_2(n) bits for every digit, the running time of Radix appears to be better than Quick Sort for a wide range of input numbers. The constant factors hidden in asymptotic notation are higher for Radix Sort and Quick-Sort uses hardware caches more effectively.
-Also, Radix sort uses counting sort as a subroutine and counting sort takes extra space to sort numbers.
-*/
 //----------------------------Find the largest elent
 int getMax(int arr[], int n)
 {
@@ -38,6 +11,7 @@ int getMax(int arr[], int n)
             mx = arr[i];
     return mx;
 }
+
 //-------------------------------------Counting Sort SubRoutine
 void countingSort(int *a,int n,int exp){
     int output[n];
