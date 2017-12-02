@@ -16,7 +16,6 @@ void rabinKarp(string pattern, string text)
 	ll hashP = 0;// Variable to store the hash value for the pattern.
 	ll hashT = 0;// Variable to store the hash value of the part of the text.
 	ll h = 1; // Variable to store the multiplier of the Most Significant Bit.
-	bool flag = 0; // Just an indicator.
 	bool indi = 0; // Just another indicator.
 	//Calculating the value of h
 	for(ll i = 0; i < pLen - 1; i++)
@@ -31,7 +30,7 @@ void rabinKarp(string pattern, string text)
 	// Iterating over the rest of the text and finding the matchings.
 	for(ll i = 0; i <= tLen - pLen; i++)
 	{
-		flag = 0;
+		bool flag = 0; // Just an indicator.
 		if(hashP == hashT) // If the hash value match
 		{
 			for(ll j = 0; j < pLen; j++) //Then match the characters.
