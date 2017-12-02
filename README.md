@@ -123,6 +123,21 @@ __Properties__
 * Average case performance	O(log n)
 * Worst case space complexity	O(1) 
 
+### Interpolation
+Interpolation search is an improved version of binary search algorithm.
+
+![alt text](https://qph.ec.quoracdn.net/main-qimg-02f1f050de01608b9b1f2f27155d1b17)
+
+Even when the data is sorted, binary search does not take advantage of that to probe the position of desired data.
+Position Probing in Interpolation Search
+Interpolation search search a particular item by computing the probe position. Initially probe position is the position of the middle most item of the collection.
+If middle item is greater than item then probe position is again calculated in the sub-array to the right of the middle item other wise item is search in sub-array to the left of the middle item. This process continues on sub-array as well until the size of subarray reduces to zero.
+
+
+#### Runtime complexity is Ο(log (log n)) as compared to Ο(log n) of Binary Search Algorithm in favorable situations.
+ 
+
+
 ----------------------------------------------------------------------------------------------------------------------
 
 ## Ciphers
