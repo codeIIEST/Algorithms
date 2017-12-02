@@ -2,18 +2,8 @@
 #include<vector>
 #include<algorithm>
 using namespace std;
-/* Algo :
-bucketSort(arr[], n)
-1) Create n empty buckets (Or lists).
-2) Do following for every array element arr[i].
-.......a) Insert arr[i] into bucket[n*array[i]]
-3) Sort individual buckets using insertion sort.
-4) Concatenate all sorted buckets.
-*/
 
 // Generally used for floating point numbers.
-
-
 void bucketSort(float a[],int n){
 vector<float> buckets[n];
 int i,j;
@@ -27,12 +17,9 @@ int index=0;
 for(i=0;i<n;i++){
     for(j=0;j<buckets[i].size();j++){
         a[index++]=buckets[i][j];
+        }
     }
 }
-
-}
-
-
 
 //-------------------------------print function
 void print(float *a,int n){
@@ -47,4 +34,3 @@ bucketSort(a,n);
 print(a,5);
 return 0;
 }
-
