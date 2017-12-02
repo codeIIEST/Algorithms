@@ -19,7 +19,7 @@ void bubblesort(int arr[], int size)
                 swap(&arr[j], &arr[j+1]);
             } 
         }
-        if(flag==1)                     //   No change in vlaue of flag depicts that the array has been sorted
+        if(flag==1)                     //   No change in value of flag depicts that the array has already been sorted
             break;
     }
 }
