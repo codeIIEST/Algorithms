@@ -134,7 +134,7 @@ Interpolation search search a particular item by computing the probe position. I
 If middle item is greater than item then probe position is again calculated in the sub-array to the right of the middle item other wise item is search in sub-array to the left of the middle item. This process continues on sub-array as well until the size of subarray reduces to zero.
 
 
-## Runtime complexity is Ο(log (log n)) as compared to Ο(log n) of Binary Search Algorithm in favorable situations.
+#### Runtime complexity is Ο(log (log n)) as compared to Ο(log n) of Binary Search Algorithm in favorable situations.
  
 
 
