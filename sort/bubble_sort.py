@@ -15,8 +15,8 @@ def bubbleSort(l1):
         i=i+1
     #print(l1)
     return l1
-
-x=input("Enter the size of list")
+print("Enter the size of the list")
+x=int(input())
 print("Enter the elements of the list")
 
 list1=list(map(int,input().split()))
