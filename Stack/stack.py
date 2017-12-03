@@ -38,8 +38,6 @@ class Stack:
             return element
         else: 
             print("Stack is empty")
-
-   
 s =Stack()
 s.push(2)
 s.push(14)
