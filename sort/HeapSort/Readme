@@ -8,7 +8,6 @@ Heap sort algorithm is divided into two basic parts :
 (2) Then a sorted array is created by repeatedly removing the largest/smallest element from the heap, and inserting it into the array. 
 {3) The heap is reconstructed after each removal.
 
-
 Time Complexity: Time complexity of heapify is O(logn). 
 Time complexity of BUILD-MAX-HEAP(A) is O(n) 
 and we run max_heapify N−1 times in heap_sort function,
