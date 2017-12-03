@@ -8,32 +8,6 @@ Heap sort algorithm is divided into two basic parts :
 (2) Then a sorted array is created by repeatedly removing the largest/smallest element from the heap, and inserting it into the array. 
 {3) The heap is reconstructed after each removal.
 
-Algorithm :
-
-HEAPSORT(A)
-1 BUILD-MAX-HEAP-(A)
-2 for i = A.length downto 2
-3 exchange A(1) with A(i)
-4 A.heap-size = A.heap-size-1
-5 MAX-HEAPIFY (A,1)
-
-BUILD-MAX-HEAP(A)
-1 A.heap-size = A.length
-2 for i = floor(A.length/2) downto 1
-3 MAX-HEAPIFY(A,i)
-
-MAX-HEAPIFY(A,i)
-1 l = LEFT(i)
-2 r = RIGHT(i)
-3 if l <=A.heap-size and A[l]>A[i]
-4 largest = l
-5 else largest = i
-6 if r <= A.heap-size and A[r] > A[largest]
-7 largest = r
-8 if largest != i
-9 exchange A[i] with A[largest]
-10 MAX-HEAPIFY(A,largest)
-
 
 Time Complexity: Time complexity of heapify is O(logn). 
 Time complexity of BUILD-MAX-HEAP(A) is O(n) 
