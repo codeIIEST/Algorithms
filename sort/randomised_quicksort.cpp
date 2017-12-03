@@ -44,10 +44,10 @@ int partition( int arr[], int beg , int end )
 void quicksort( int arr[] , int first , int last )
 {
 
-    int pivot ;
     if(first<last)
     {
-        pivot = partition(arr,first,last);
+        
+        int pivot = partition(arr,first,last);
 
         //recursive calls to quicksort
         quicksort(arr,first,pivot-1);
