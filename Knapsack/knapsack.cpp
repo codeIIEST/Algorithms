@@ -42,3 +42,4 @@ int main()
 	cout << knapsack(V, W, n, maxWeight) << endl;
 	return 0;
 }
+
