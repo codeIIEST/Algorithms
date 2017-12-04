@@ -6,7 +6,8 @@ public class Encryptiondecryption {
 		Scanner s=new Scanner(System.in);
 		System.out.println("Enter the encryption key(1-25):");
 		int e=s.nextInt();                                              //Encryption key
-		String ptext,ctext="";
+		String ptext;
+		String ctext="";
 		char ch;
 		System.out.println("Plaintext-Uppercase Letters Only:");
 		ptext=s.next();                                                 //Plaintext taken from user
