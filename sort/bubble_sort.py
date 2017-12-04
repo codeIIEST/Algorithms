@@ -1,25 +1,29 @@
 #implementation of bubble sort algorithm
 # Author: Rahul Thakur
-# Date:02 December 2017
+# Date:04 December 2017
 
-def bubbleSort(l1):
 
-    size=len(l1)
-    i=0
+#Bubble Sort Function
+def bubbleSort(list_param):
 
-    while i<size :
+    size_list = len(list_param)
+    i = 0
+
+    while i<size_list :
         j=0
 
-        while j< size-i-1:
-            if(l1[j]>l1[j+1]):
-                temp=l1[j]
-                l1[j]=l1[j+1]
-                l1[j+1]=temp
-            j=j+1
+        while j< size_list-i-1:
 
-        i=i+1
+            if(list_param[j]>list_param[j+1]):
+                temp = list_param[j]
+                list_param[j] = list_param[j+1]
+                list_param[j+1] = temp
 
-    return l1
+            j = j+1
+
+        i = i+1
+
+    return list_param
 
 print("Enter the size of the list")
 
