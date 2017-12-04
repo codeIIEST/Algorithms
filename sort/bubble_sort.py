@@ -2,6 +2,11 @@
 # Author: Rahul Thakur
 # Date:04 December 2017
 
+#Swapping Function
+def swap(list_param,inner_counter):
+    temp = list_param[ inner_counter ]
+    list_param[ inner_counter ] = list_param[ inner_counter+1 ]
+    list_param[ inner_counter+1 ] = temp
 
 #Bubble Sort Function
 def bubble_sort(list_param):
@@ -15,9 +20,7 @@ def bubble_sort(list_param):
         while inner_counter < size_list- outer_counter - 1:
 
             if( list_param[ inner_counter ] > list_param[ inner_counter+1 ] ):
-                temp = list_param[ inner_counter ]
-                list_param[ inner_counter ] = list_param[ inner_counter+1 ]
-                list_param[ inner_counter+1 ] = temp
+                swap(list_param,inner_counter)
 
             inner_counter = inner_counter + 1
 

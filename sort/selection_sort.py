@@ -2,6 +2,13 @@
 # Author: RAHUL THAKUR
 # Date: 02 December 2017
 
+def swap(list_param,outer_counter,loc,smallest):
+    temp=list_param[ outer_counter ]
+    list_param[ outer_counter ]=smallest
+    list_param[loc]=temp
+
+
+
 def selection_sort(list_param):
 
     size=len(list_param)
@@ -19,10 +26,8 @@ def selection_sort(list_param):
                 loc = inner_counter
 
             inner_counter = inner_counter + 1
+            swap(list_param,outer_counter,loc,smallest)
 
-        temp=list_param[ outer_counter ]
-        list_param[ outer_counter ]=smallest
-        list_param[loc]=temp
         outer_counter = outer_counter + 1
 
     return list_param
