@@ -4,35 +4,35 @@
 
 
 #Bubble Sort Function
-def bubbleSort(list_param):
+def bubble_sort(list_param):
 
     size_list = len(list_param)
-    i = 0
+    outer_counter = 0                           #variable to be used as iterator
 
-    while i<size_list :
-        j=0
+    while outer_counter < size_list :
+        inner_counter = 0
 
-        while j< size_list-i-1:
+        while inner_counter < size_list- outer_counter - 1:
 
-            if(list_param[j]>list_param[j+1]):
-                temp = list_param[j]
-                list_param[j] = list_param[j+1]
-                list_param[j+1] = temp
+            if( list_param[ inner_counter ] > list_param[ inner_counter+1 ] ):
+                temp = list_param[ inner_counter ]
+                list_param[ inner_counter ] = list_param[ inner_counter+1 ]
+                list_param[ inner_counter+1 ] = temp
 
-            j = j+1
+            inner_counter = inner_counter + 1
 
-        i = i+1
+        outer_counter = outer_counter + 1
 
     return list_param
 
-print("Enter the size of the list")
+print( "Enter the size of the list " )
 
-x=int(input())
+Number_of_elements = int(input())
 
-print("Enter the elements of the list")
+print( "Enter the elements of the list " )
 
-list1=list(map(int,input().split()))
+List=list(map(int,input().split()))
 
-print("Array after bubble sort is")
+print( "Array after bubble sort is :" )
 
-print(bubbleSort(list1))
+print(bubble_sort(List))
