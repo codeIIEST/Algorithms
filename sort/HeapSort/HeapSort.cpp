@@ -1,50 +1,68 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-//-------------------------------------------Heapify
-void maxHeapify(int *a,int i,int n){
-int left = 2*i+1;
-int right = 2*i+2;
-int largest = i;
-
-if(left<n&&a[left]>a[i])
-    largest = left;
-if(right<n&&a[right]>a[largest])
-    largest = right;
-if(largest!=i)
-    {swap(a[i],a[largest]);
-    maxHeapify(a,largest,n);
-    }
-}
-//--------------------------------------Build max Heap
-void buildMaxHeap(int *a,int n){
-int i;
-    for(i=n/2;i>=0;i--)
+//--------------------------------------Heapify 
+void max_heapify(int *a, int i, int n)
+{
+    int left, largest;
+    largest = a[i];
+    left = 2*i;
+    while (left <= n)
     {
-    maxHeapify(a,i,n);
+        if (left < n && a[left+1] > a[left])
+            left = left+1;
+        if (largest > a[left])
+            break;
+        else if (largest <= a[left])
+        {
+            a[left/2] = a[left];
+            left = 2*left;
+        }
     }
+    a[left/2] = largest;
+    return;
 }
+
 //-----------------------------------HeapSort
-void heapSort(int *a,int n){
-buildMaxHeap(a,n);
-for(int i=n-1;i>=0;i--){
-    swap(a[i],a[0]);
-    n--; //Decrease the heap Size
-    maxHeapify(a,0,n);
+void heapsort(int *a, int n)
+{
+    int i, largest;
+    for (i = n; i >= 2; i--)
+    {
+        largest = a[i];
+        a[i] = a[1];
+        a[1] = largest;
+        max_heapify(a, 1, i - 1);
     }
 }
 
-//----------------------------Print Function
-void print(int *a,int n){
-    for(int i=0;i<5;i++)
-        cout<<a[i]<<" "<<endl;
-
+//---------------------------------Build max Heap
+void build_maxheap(int *a, int n)
+{
+    int i;
+    for(i = n/2; i >= 1; i--)
+    {
+        max_heapify(a, i, n);
+    }
 }
 
-int main(){
-
-int a[]={5,1,2,0,6};
-heapSort(a,5);
-print(a,5);
-return 0;
+int main()
+{
+    int n, i, x;
+    cout<<"Enter no of elements of array\n";
+    cin>>n;
+    int a[20];
+    for (i = 1; i <= n; i++)
+    {
+        cout<<"Enter element "<<(i)<<endl;
+        cin>>a[i];
+    }
+    build_maxheap(a,n);
+    heapsort(a, n);
+    cout<<"\n\nSorted Array :\n";
+    for (i = 1; i <= n; i++)
+    {
+        cout<<a[i]<<endl;
+    }
+    return 0;
 }
