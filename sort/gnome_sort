@@ -14,7 +14,6 @@ int arr[m];
        printf("Enter array elements:- ");
        for(i=0;i<m;i++)
        {
-           printf("in");
            scanf("%d",&a);
            arr[i]=a;
        }
