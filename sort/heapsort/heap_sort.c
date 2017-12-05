@@ -62,14 +62,10 @@ void heap_sort(int *arr, int n) {
 
 int main() {
 
-	int n, *arr, i;
-	printf("Enter number of elements\n");
-	scanf("%d", &n);
+	int i, n;
 
-	arr = malloc(sizeof(int)*n);
-	printf("Enter the elements\n");
-	for(i=0; i<n; ++i)
-		scanf("%d", arr + i);
+	int arr[] = { 56, -45, 235, 146, -85, 0};
+	n = sizeof(arr)/sizeof(int);
 
 	heap_sort(arr, n);
 
