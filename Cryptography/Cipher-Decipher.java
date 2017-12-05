@@ -1,5 +1,6 @@
 
 import java.util.*;
+package crypyography;
 public class Encryptiondecryption {
 
 	public static void main(String[] args) {
