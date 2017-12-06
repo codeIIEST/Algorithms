@@ -1,0 +1,52 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+
+void main()
+{
+  int n,i,m,a;
+
+printf("Enter the number of elements in the array:- ");
+scanf("%d",&m);
+
+int arr[m];
+
+       printf("Enter array elements:- ");
+       for(i=0;i<m;i++)
+       {
+           scanf("%d",&a);
+           arr[i]=a;
+       }
+n = sizeof(arr)/sizeof(arr[0]);
+
+gnome(arr,n);
+
+  printf("The array after gnome sort is :- ");
+  for(i=0;i<n;i++)
+  {
+      printf("%d",arr[i]);
+      printf("\t");
+  }
+}
+
+gnome(int arr[],int n)
+{
+    int k=0,temp;
+
+    while (k<n)
+    {
+        if(k==0)
+            k++;
+        if(arr[k]>=arr[k-1])
+            k++;
+        else
+        {
+            temp=arr[k];
+            arr[k]=arr[k-1];
+            arr[k-1]=temp;
+            k--;
+        }
+
+    }
+    return;
+    }
