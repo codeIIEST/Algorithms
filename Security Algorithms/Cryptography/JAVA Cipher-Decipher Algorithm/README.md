@@ -23,33 +23,33 @@ Your program will prompt the user for an encryption key, and a plaintext message
 
 <b>Sample Run (with values entered by the user underlined):</b>   
 
-Enter encryption key: 4 
-Plaintext - uppercase letters only: HOOK 
-Ciphertext: LSSO 
-Enter ciphertext - uppercase letters only: LSSO 
-Plaintext for each encryption key from 1 to 25:  
-key 1: plaintext = KRRN 
-key 2: plaintext = JQQM 
-key 3: plaintext = IPPL 
-key 4: plaintext = HOOK 
-key 5: plaintext = GNNJ 
-key 6: plaintext = FMMI 
-key 7: plaintext = ELLH 
-key 8: plaintext = DKKG 
-key 9: plaintext = CJJF 
-key 10: plaintext = BIIE 
-key 11: plaintext = AHHD 
-key 12: plaintext = ZGGC 
-key 13: plaintext = YFFB 
-key 14: plaintext = XEEA 
-key 15: plaintext = WDDZ 
-key 16: plaintext = VCCY 
-key 17: plaintext = UBBX 
-key 18: plaintext = TAAW 
-key 19: plaintext = SZZV 
-key 20: plaintext = RYYU 
-key 21: plaintext = QXXT 
-key 22: plaintext = PWWS 
-key 23: plaintext = OVVR 
-key 24: plaintext = NUUQ 
+Enter encryption key: 4
+Plaintext - uppercase letters only: HOOK
+Ciphertext: LSSO
+Enter ciphertext - uppercase letters only: LSSO
+Plaintext for each encryption key from 1 to 25:
+key 1: plaintext = KRRN
+key 2: plaintext = JQQM
+key 3: plaintext = IPPL
+key 4: plaintext = HOOK
+key 5: plaintext = GNNJ
+key 6: plaintext = FMMI
+key 7: plaintext = ELLH
+key 8: plaintext = DKKG
+key 9: plaintext = CJJF
+key 10: plaintext = BIIE
+key 11: plaintext = AHHD
+key 12: plaintext = ZGGC
+key 13: plaintext = YFFB
+key 14: plaintext = XEEA
+key 15: plaintext = WDDZ
+key 16: plaintext = VCCY
+key 17: plaintext = UBBX
+key 18: plaintext = TAAW
+key 19: plaintext = SZZV
+key 20: plaintext = RYYU
+key 21: plaintext = QXXT
+key 22: plaintext = PWWS
+key 23: plaintext = OVVR
+key 24: plaintext = NUUQ
 key 25: plaintext = MTTP
