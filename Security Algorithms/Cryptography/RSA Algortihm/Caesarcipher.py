@@ -9,9 +9,9 @@ The cipher is ready for Capital Letters only
 def encrypt(message,key):
   ascii_vals_enc=[ord(c) for c in message]               #To get a list of ASCII Values of each character in string
   for i in range(0,len(ascii_vals_enc)):
-  if(ascii_vals_enc[i]>=65 and ascii_vals_enc[i]<=90):
-	    ascii_vals_enc[i] = 65 + (ascii_vals_enc[i] + key - 91)%26  #If the values in the list are greater than 65 and 90, we get it back b/w 65 and 90
-	encrypt_string = ''.join(chr(i) for i in ascii_vals_enc) # To get the encrypted string using the list of manipulated ASCII vals
+    if(ascii_vals_enc[i]>=65 and ascii_vals_enc[i]<=90):
+	ascii_vals_enc[i] = 65 + (ascii_vals_enc[i] + key - 91)%26  #If the values in the list are greater than 65 and 90, we get it back b/w 65 and 90
+  encrypt_string = ''.join(chr(i) for i in ascii_vals_enc) # To get the encrypted string using the list of manipulated ASCII vals
   return encrypt_string
 
 def decrypt(message,key):
