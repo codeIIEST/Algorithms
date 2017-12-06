@@ -8,7 +8,9 @@ Your program performs encryption on a message consisting entirely of uppercase l
 
 A Caesar cipher encrypts a plaintext message using a key from 1 to 25 by replacing each letter  in  the  message  by  the  letter key positions  ahead  in  the  alphabet,  with  wraparound  to  the beginning of the alphabet as needed. So with key 5, the letter ‘B’ is replaced with ‘G’, and the letter ‘Y’ is replaced with ‘D’. Decryption reverses this process; so during decryption with key 5, ‘G’ is replaced by ‘B’.</p>
 
-Example:  Let the letter A to Z are numbered form 0 to 25.
+<b>Example:</b>
+
+Let the letter A to Z are numbered form 0 to 25.
 A B C D E F G H I J K  L  M  N  O  P  Q  R  S  T  U  V  W  X   Y Z 
 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25
 
