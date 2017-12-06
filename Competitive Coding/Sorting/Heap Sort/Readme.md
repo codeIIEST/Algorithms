@@ -1,7 +1,7 @@
-# Heap sort is a comparison based sorting technique based on Binary Heap data structure.
-# Heapsort is an in-place algorithm, but it is not a stable sort.
-# Heap Sort is one of the best sorting methods being in-place and with no quadratic worst-case scenarios.
-# In max-heaps, maximum element will always be at the root. Heap Sort uses this property of heap to sort the array.
+Heap sort is a comparison based sorting technique based on Binary Heap data structure.
+Heapsort is an in-place algorithm, but it is not a stable sort.
+Heap Sort is one of the best sorting methods being in-place and with no quadratic worst-case scenarios.
+In max-heaps, maximum element will always be at the root. Heap Sort uses this property of heap to sort the array.
 
 Heap sort algorithm is divided into two basic parts :
 (1) Creating a Heap of the unsorted list.
