@@ -1,10 +1,12 @@
-Problem Statement:    To  design  a  Caesar  Cipher,  this  encrypts  plaintext  to  generate  ciphertext  and  decrypts ciphertext to generate plaintext.  
+                                               JAVA Cipher-Decipher Algorithm
+<b>Problem Statement:</b>    To  design  a  Caesar  Cipher,  this  encrypts  plaintext  to  generate  ciphertext  and  decrypts ciphertext to generate plaintext.  
 
-Description:   Cryptography involves creating and decoding secret messages. Suppose you want to send a message, called the plaintext. You encode the plaintext to create the string you will actually transmit,  called  the  ciphertext.  Your  goal  is  to  prevent  adversaries  from  understanding  the message if they intercept it.
+<b>Description:</b>  
+<P> Cryptography involves creating and decoding secret messages. Suppose you want to send a message, called the plaintext. You encode the plaintext to create the string you will actually transmit,  called  the  ciphertext.  Your  goal  is  to  prevent  adversaries  from  understanding  the message if they intercept it.
 
 Your program performs encryption on a message consisting entirely of uppercase letters using a Caesar cipher with a specified key, and decryption of a message (all uppercase letters) using a Caesar cipher with all possible keys (1, 2, ..., 25).
 
-A Caesar cipher encrypts a plaintext message using a key from 1 to 25 by replacing each letter  in  the  message  by  the  letter key positions  ahead  in  the  alphabet,  with  wraparound  to  the beginning of the alphabet as needed. So with key 5, the letter ‘B’ is replaced with ‘G’, and the letter ‘Y’ is replaced with ‘D’. Decryption reverses this process; so during decryption with key 5, ‘G’ is replaced by ‘B’. (Hint: use the modulus operator).
+A Caesar cipher encrypts a plaintext message using a key from 1 to 25 by replacing each letter  in  the  message  by  the  letter key positions  ahead  in  the  alphabet,  with  wraparound  to  the beginning of the alphabet as needed. So with key 5, the letter ‘B’ is replaced with ‘G’, and the letter ‘Y’ is replaced with ‘D’. Decryption reverses this process; so during decryption with key 5, ‘G’ is replaced by ‘B’.</p>
 
 Example:  Let the letter A to Z are numbered form 0 to 25.
 A B C D E F G H I J K  L  M  N  O  P  Q  R  S  T  U  V  W  X   Y Z 
@@ -19,7 +21,7 @@ With key=4  Plaintext=”HOOK”  encrypted to Ciphertext=”LSSO”
 
 Your program will prompt the user for an encryption key, and a plaintext message to be encoded, and  then  produce  the  ciphertext.  Then  your  program  will  prompt  the  user  for  a  ciphertext message, and display the corresponding plaintext, for each possible encryption key from 1 to 25.  
 
-Sample Run (with values entered by the user underlined):   
+<b>Sample Run (with values entered by the user underlined):</b>   
 
 Enter encryption key: 4 
 Plaintext - uppercase letters only: HOOK 
