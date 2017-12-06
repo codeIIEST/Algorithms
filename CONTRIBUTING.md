@@ -11,6 +11,8 @@ Please proceed with a Pull Request only after you're assigned. It'd be sad if yo
 
 While making a Pull Request, please take care of the following rules: 
 
+- Make sure the master branch of your forked repo is not any commits ahead than the original master repository.
+- Create a new branch from master in the forked repository. Updated your changes in that branch and not in master.
 - Include only one algorithm in each pull request. A PR containing more than one algorithm *will not be merged*.
 - Write your algorithm in a language other coders are mostly acquainted with i.e. `C`/`C++`/`Python`/`Java`. Any 
 other language will be accepted only after discussion with the maintainers.
