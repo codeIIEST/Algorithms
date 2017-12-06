@@ -6,12 +6,12 @@ public class Encryptiondecryption {
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
 		System.out.println("Enter the encryption key(1-25):");
-		int e=s.nextInt();
+		int e=s.nextInt();                                                  //Encryption key taken from user
 		String ptext;
 		String ctext="";
 		char ch;
 		System.out.println("Plaintext-Uppercase Letters Only:");
-		ptext=s.next();
+		ptext=s.next();                                                     //Plaintext taken from user
 		int len=ptext.length();
 		//Encryption starts from here.
 		for(int i=0;i<len;i++)
