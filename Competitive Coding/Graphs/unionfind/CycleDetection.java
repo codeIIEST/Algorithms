@@ -1,6 +1,7 @@
+package Graph;
 import java.io.*;
 import java.util.*;
-class Unionfind
+public class Unionfind
 {
     private int V;
     private LinkedList<Integer> adj[]; 
@@ -16,8 +17,7 @@ class Unionfind
     }
     public Boolean isCyclicUtil(int v, Boolean visited[], int parent)
     {
-        visited[v] = true;
-        Integer i;
+        visited[v] = true;Integer i;
         Iterator<Integer> it = adj[v].iterator();
         while (it.hasNext())
         {
