@@ -1,66 +1,67 @@
-import java.util.*;
-import java.lang.*;
 import java.io.*;
+import java.util.*;
 class Graph
-{   int V, E;
-    Edge edge[];
-    class Edge
-    {
-        int src, dest;
-    };
-    Graph(int v,int e)
-    {
+{
+    private int V;
+    private LinkedList<Integer> adj[]; 
+    Graph(int v) {
         V = v;
-        E = e;
-        edge = new Edge[E];
-        for (int i=0; i<e; ++i)
-            edge[i] = new Edge();
+        adj = new LinkedList[v];
+        for(int i=0; i<v; ++i)
+            adj[i] = new LinkedList();
     }
-    int find(int parent[], int i)
-    {
-        if (parent[i] == -1)
-            return i;
-        return find(parent, parent[i]);
+    void addEdge(int v,int w) {
+        adj[v].add(w);
+        adj[w].add(v);
     }
-    void Union(int parent[], int x, int y)
+    Boolean isCyclicUtil(int v, Boolean visited[], int parent)
     {
-        int xset = find(parent, x);
-        int yset = find(parent, y);
-        parent[xset] = yset;
-    }
-    int isCycle( Graph graph)
-    {
-        int parent[] = new int[graph.V];
-        for (int i=0; i<graph.V; ++i)
-            parent[i]=-1;
-        for (int i = 0; i < graph.E; ++i)
+        visited[v] = true;
+        Integer i;
+        Iterator<Integer> it = adj[v].iterator();
+        while (it.hasNext())
         {
-            int x = graph.find(parent, graph.edge[i].src);
-            int y = graph.find(parent, graph.edge[i].dest);
-            if (x == y)
-                return 1;
-            graph.Union(parent, x, y);
+            i = it.next();
+            if (!visited[i])
+            {
+                if (isCyclicUtil(i, visited, v))
+                    return true;
+            }
+            else if (i != parent)
+                return true;
         }
-        return 0;
+        return false;
     }
-    public static void main (String[] args)
+    Boolean isCyclic()
     {
-        /* Let us create following graph
-         0
-        |  \
-        |    \
-        1-----2 */
-        int V = 3, E = 3;
-        Graph graph = new Graph(V, E);
-        graph.edge[0].src = 0;
-        graph.edge[0].dest = 1;
-        graph.edge[1].src = 1;
-        graph.edge[1].dest = 2;
-        graph.edge[2].src = 0;
-        graph.edge[2].dest = 2;
-        if (graph.isCycle(graph)==1)
-            System.out.println( "graph contains cycle" );
+        Boolean visited[] = new Boolean[V];
+        for (int i = 0; i < V; i++)
+            visited[i] = false;
+        for (int u = 0; u < V; u++)
+            if (!visited[u])
+                if (isCyclicUtil(u, visited, -1))
+                    return true;
+        return false;
+    }
+    public static void main(String args[])
+    {
+        Graph g1 = new Graph(5);
+        g1.addEdge(1, 0);
+        g1.addEdge(0, 2);
+        g1.addEdge(2, 0);
+        g1.addEdge(0, 3);
+        g1.addEdge(3, 4);
+        if (g1.isCyclic())
+            System.out.println("Graph contains cycle");
         else
-            System.out.println( "graph doesn't contain cycle" );
+            System.out.println("Graph doesn't contains cycle");
+
+        Graph g2 = new Graph(3);
+        g2.addEdge(0, 1);
+        g2.addEdge(1, 2);
+        if (g2.isCyclic())
+            System.out.println("Graph contains cycle");
+        else
+            System.out.println("Graph doesn't contains cycle");
     }
 }
