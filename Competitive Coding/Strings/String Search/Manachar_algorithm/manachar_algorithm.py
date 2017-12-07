@@ -1,3 +1,5 @@
+''' Given a string, find the longest palindromic substring '''
+''' O(n) '''
 def get_palindrome_length(string, index):
     length = 1
     while index + length < len(string) and index - length >= 0:
@@ -13,7 +15,7 @@ def interleave(string):
         ret.extend(['#', s])
     ret.append('#')
     return ''.join(ret)
-
+''' Find longest palindrome number '''
 def manacher(string):
     right = 0
     center = 0
@@ -30,6 +32,6 @@ def manacher(string):
                 center = int(i)
                 right = center + plength
     return [e/2 for e in P]
-
+''' Return the palindrome sub-string '''
 def get_palindrome_number(string):
     return sum(manacher(string))
