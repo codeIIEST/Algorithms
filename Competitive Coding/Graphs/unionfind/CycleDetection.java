@@ -1,55 +1,75 @@
-package Graph;
-import java.io.*;
-import java.util.*;
-public class Unionfind
-{
-    private int V;
-    private LinkedList<Integer> adj[]; 
-    Unionfind(int v) {
-        V = v;
-        adj = new LinkedList[v];
-        for(int i=0; i<v; ++i)
-            adj[i] = new LinkedList();
-    }
-    public void addEdge(int v,int w) {
-        adj[v].add(w);
-        adj[w].add(v);
-    }
-    public Boolean isCyclicUtil(int v, Boolean visited[], int parent)
-    {
-        visited[v] = true;Integer i;
-        Iterator<Integer> it = adj[v].iterator();
-        while (it.hasNext())
-        {
-            i = it.next();
-            if (!visited[i])
-            {
-                if (isCyclicUtil(i, visited, v))
-                    return true;
-            }
-            else if (i != parent)
+package com.interview.graph;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class CycleUndirectedGraph<T> {
+
+    public boolean hasCycleUsingDisjointSets(Graph<T> graph){
+        DisjointSet disjointSet = new DisjointSet();
+        
+        for(Vertex<T> vertex : graph.getAllVertex()){
+            disjointSet.makeSet(vertex.getId());
+        }
+        
+        for(Edge<T> edge : graph.getAllEdges()){
+            long parent1 = disjointSet.findSet(edge.getVertex1().getId());
+            long parent2 = disjointSet.findSet(edge.getVertex2().getId());
+            if(parent1 == parent2){
                 return true;
+            }
+            disjointSet.union(edge.getVertex1().getId(), edge.getVertex2().getId());
         }
         return false;
     }
-    public Boolean isCyclic()
-    {
-        Boolean visited[] = new Boolean[V];
-        for (int i = 0; i < V; i++)
-            visited[i] = false;
-        for (int u = 0; u < V; u++)
-             if (!visited[u] && isCyclicUtil(u, visited, -1))
-                    return true;
+    
+    public boolean hasCycleDFS(Graph<T> graph){
+        Set<Vertex<T>> visited = new HashSet<Vertex<T>>();
+        for(Vertex<T> vertex : graph.getAllVertex()){
+            if(visited.contains(vertex)){
+                continue;
+            }
+            boolean flag = hasCycleDFSUtil(vertex, visited, null);
+            if(flag){
+                return true;
+            }
+        }
         return false;
     }
-    public static void main(String args[])
-    {
-        Graph g2 = new Graph(3);
-        g2.addEdge(0, 1);
-        g2.addEdge(1, 2);
-        if (g2.isCyclic())
-            System.out.println("Graph contains cycle");
-        else
-            System.out.println("Graph doesn't contains cycle");
+    
+    public boolean hasCycleDFSUtil(Vertex<T> vertex, Set<Vertex<T>> visited,Vertex<T> parent){
+        visited.add(vertex);
+        for(Vertex<T> adj : vertex.getAdjacentVertexes()){
+            if(adj.equals(parent)){
+                continue;
+            }
+            if(visited.contains(adj)){
+                return true;
+            }
+            boolean hasCycle = hasCycleDFSUtil(adj,visited,vertex);
+            if(hasCycle){
+                return true;
+            }
+        }
+        return false;
     }
+    
+    public static void main(String args[]){
+        
+        CycleUndirectedGraph<Integer> cycle = new CycleUndirectedGraph<Integer>();
+        Graph<Integer> graph = new Graph<Integer>(false);
+        
+        graph.addEdge(0, 1);
+        graph.addEdge(1, 2);
+        graph.addEdge(0, 3);
+        graph.addEdge(3, 4);
+        graph.addEdge(4, 5);
+        graph.addEdge(5, 1);
+        boolean isCycle = cycle.hasCycleDFS(graph);
+        System.out.println(isCycle);
+        isCycle = cycle.hasCycleUsingDisjointSets(graph);
+        System.out.print(isCycle);
+        
+    }
+    
 }
