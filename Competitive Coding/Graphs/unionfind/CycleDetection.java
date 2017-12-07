@@ -1,20 +1,20 @@
 import java.io.*;
 import java.util.*;
-class Graph
+class Unionfind
 {
     private int V;
     private LinkedList<Integer> adj[]; 
-    Graph(int v) {
+    Unionfind(int v) {
         V = v;
         adj = new LinkedList[v];
         for(int i=0; i<v; ++i)
             adj[i] = new LinkedList();
     }
-    void addEdge(int v,int w) {
+    public void addEdge(int v,int w) {
         adj[v].add(w);
         adj[w].add(v);
     }
-    Boolean isCyclicUtil(int v, Boolean visited[], int parent)
+    public Boolean isCyclicUtil(int v, Boolean visited[], int parent)
     {
         visited[v] = true;
         Integer i;
@@ -32,7 +32,7 @@ class Graph
         }
         return false;
     }
-    Boolean isCyclic()
+    public Boolean isCyclic()
     {
         Boolean visited[] = new Boolean[V];
         for (int i = 0; i < V; i++)
