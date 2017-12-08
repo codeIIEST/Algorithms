@@ -45,7 +45,7 @@ void VerticalOrder(Node* root)
 
 
 	map<int,vector<int>>::iterator it;
-	for(it=hasht.begin();it!=hasht.end();it++)//Loops to print the values in the hashmap
+	for(it=hasht.begin();it!=hasht.end();it=it+1)//Loops to print the values in the hashmap
 	{
 		for(int i=0;i<it->second.size();i++)
 			cout<<it->second[i]<<" ";
