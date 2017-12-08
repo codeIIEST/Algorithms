@@ -36,7 +36,7 @@ void push(char item)
 /* define pop operation */
 char pop()
 {
-	char item ;
+	
 
 	if(top <0)
 	{
@@ -47,7 +47,7 @@ char pop()
 		exit(1);
 	}
 	else
-	{
+	{       char item ;
 		item = stack[top];
 		top = top-1;
 		return(item);
