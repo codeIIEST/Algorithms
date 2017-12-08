@@ -11,7 +11,7 @@
 
 ----------------------------------------------------------------------------------------------
 
-<img src="https://github.com/codeIIEST/Algorithms/blob/readme-upd/algocodeiiest.jpg" width="700">
+<img src="https://github.com/codeIIEST/Algorithms/blob/master/algocodeiiest.jpg" width="700">
 
 ### About the Project
 
