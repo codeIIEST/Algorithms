@@ -1,3 +1,4 @@
+
 # Algorithms
 
 
@@ -10,8 +11,7 @@
 
 ----------------------------------------------------------------------------------------------
 
-
-![](https://github.com/codeIIEST/Algorithms/blob/readme-upd/algocodeiiest.jpg)
+<img src="https://github.com/codeIIEST/Algorithms/blob/readme-upd/algocodeiiest.jpg" width="700">
 
 ### About the Project
 
@@ -36,3 +36,9 @@ We would always encourage contribution from new developers. We hope with your co
 For more details please see the ![Contributing Guidelines](https://github.com/codeIIEST/Algorithms/blob/readme-upd/CONTRIBUTING.md).
 
 We maintain a curated list of issues under the ![issues page](https://github.com/codeIIEST/Algorithms/issues). We encourage to start working with them. Please join the gitter channel for any doubts.
+
+### Maintainers
+
+* [Manumeral](https://github.com/manumeral)
+* [smitbose](https://github.com/smitbose)
+
