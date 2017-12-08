@@ -1,6 +1,6 @@
 # Linked List operations
 
-**This folder contains files that have the following programs**
+**This folder contains files that have the following algorithms**
 
  1. All BASIC Linked List operations on a Linked List based on *Pointers*
    
