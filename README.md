@@ -37,6 +37,8 @@ For more details please see the ![Contributing Guidelines](https://github.com/co
 
 We maintain a curated list of issues under the ![issues page](https://github.com/codeIIEST/Algorithms/issues). We encourage to start working with them. Please join the gitter channel for any doubts.
 
+---------------------------------------------------
+
 ### Maintainers
 
 * [Manumeral](https://github.com/manumeral)
