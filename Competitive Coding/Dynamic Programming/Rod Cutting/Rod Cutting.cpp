@@ -25,7 +25,7 @@ int main()
  		{
  			if(j==0)
  				temp[i][j]=0;
- 			else if(i==0)
+ 			else if(i==0 && j!=0)
  				temp[i][j]=price[i-1];
  			else if(i>j)
  				temp[i][j]=temp[i-1][j];
