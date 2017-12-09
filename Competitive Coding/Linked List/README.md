@@ -2,7 +2,7 @@
 
 **This folder contains files that have the following algorithms**
 
- 1. All BASIC Linked List operations on a Linked List based on *Pointers*
+ 1. All BASIC Linked List operations on a Linked List based on **Pointers** &nbsp;&nbsp;&nbsp; [File Link](https://github.com/codeIIEST/Algorithms/blob/1cc9b4bc30bf8ed5beddca9b55c68a217dc4002b/Competitive%20Coding/Linked%20List/Linked_List_operation.cpp#L1)
    
     * Adding elements at the *end* of a Linked List.    [Code](https://github.com/codeIIEST/Algorithms/blob/1cc9b4bc30bf8ed5beddca9b55c68a217dc4002b/Competitive%20Coding/Linked%20List/Linked_List_operation.cpp#L36-L67)
     * Adding elements at the *begining* of a Linked List.   [Code](https://github.com/codeIIEST/Algorithms/blob/1cc9b4bc30bf8ed5beddca9b55c68a217dc4002b/Competitive%20Coding/Linked%20List/Linked_List_operation.cpp#L69-L94)
@@ -16,4 +16,4 @@
     * Merging two Sorted *[Increasing order]* Linked Lists. [Code](https://github.com/codeIIEST/Algorithms/blob/1cc9b4bc30bf8ed5beddca9b55c68a217dc4002b/Competitive%20Coding/Linked%20List/Linked_List_operation.cpp#L309-L395)
     * Reversing a Linked List.  [Code](https://github.com/codeIIEST/Algorithms/blob/1cc9b4bc30bf8ed5beddca9b55c68a217dc4002b/Competitive%20Coding/Linked%20List/Linked_List_operation.cpp#L397-L410)
 
- 2. Removing Duplicate Elements from an unsorted Linked List.
+ 2. Removing Duplicate Elements from an Unsorted Linked List. &nbsp;&nbsp;&nbsp;[File Link](https://github.com/codeIIEST/Algorithms/blob/1cc9b4bc30bf8ed5beddca9b55c68a217dc4002b/Competitive%20Coding/Linked%20List/Removing_duplicates_from_Linked_List.cpp#L1)
