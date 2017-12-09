@@ -17,7 +17,7 @@ int rear = -1;
  
 int main()
 {
-	int i, vertex, count, topological_sort[MAX], indegree[MAX];
+	int i, count, topological_sort[MAX], indegree[MAX];
 	create_graph();
 	for(i = 0; i < total_vertices; i++)
 	{
@@ -30,7 +30,7 @@ int main()
 	count = 0;
 	while(!isEmpty() && count < total_vertices)
 	{
-		vertex = del();
+		int vertex = del();
     		topological_sort[++count] = vertex;
 		for(i = 0; i < total_vertices; i++)
 		{
@@ -90,7 +90,6 @@ int isEmpty()
  
 int del()
 {
-	int element;
 	if (front == -1 || front > rear)
 	{
 		printf("Queue Underflow\n");
@@ -98,7 +97,7 @@ int del()
 	}
 	else
 	{
-		element = queue[front];
+		int element = queue[front];
 		front = front+1;
 		return element;
 	}
