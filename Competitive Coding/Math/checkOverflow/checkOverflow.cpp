@@ -1,8 +1,13 @@
+// CPP program to check for integer
+// overflow on multiplication
 #include <iostream>
 using namespace std;
-
+// Function to check whether there is
+// overflow in a * b or not. Ittreturns
+// true if there is overflow.
 bool isOverflow(long long a, long long b)
 {
+	// Check if either of them is zero
 	if (a == 0 || b == 0) 
 		return false;
 
