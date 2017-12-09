@@ -18,6 +18,8 @@ Problem Description:
 The N Queen is the problem of placing N chess queens on an N×N chessboard so that no two queens attack each other. 
 ![N Queen Problem](http://mnemstudio.org/ai/ga/images/nqueens1.gif)
 
+** [CODE](https://github.com/SKKSaikia/Algorithms/blob/br2/Competitive%20Coding/Backtrack/nQueen.cpp) **
+
 # # 2 Sudoku:
 Given a partially filled 9×9 2D array ‘grid[9][9]’, the goal is to assign digits (from 1 to 9) to the empty cells so that every row, column, and subgrid of size 3×3 contains exactly one instance of the digits from 1 to 9.
 ![Sudoku](https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Sudoku-by-L2G-20050714_solution.svg/364px-Sudoku-by-L2G-20050714_solution.svg.png)
