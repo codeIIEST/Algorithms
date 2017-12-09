@@ -24,13 +24,19 @@ The N Queen is the problem of placing N chess queens on an N×N chessboard so th
 Given a partially filled 9×9 2D array ‘grid[9][9]’, the goal is to assign digits (from 1 to 9) to the empty cells so that every row, column, and subgrid of size 3×3 contains exactly one instance of the digits from 1 to 9.
 ![Sudoku](https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Sudoku-by-L2G-20050714_solution.svg/364px-Sudoku-by-L2G-20050714_solution.svg.png)
 
+** [CODE](https://github.com/SKKSaikia/Algorithms/blob/br2/Competitive%20Coding/Backtrack/Sudoku.cpp) **
+
 # # 3 15 Puzzle:
 Find if arranging numbers in ascending order is possible row wise .Given, the initial configuration is scrambled up numbers in a board with one empty space.
 
 ![puzzle](https://ece.uwaterloo.ca/~dwharder/aads/Algorithms/N_puzzles/images/puz3.png)
 
+** [CODE](https://github.com/SKKSaikia/Algorithms/blob/br2/Competitive%20Coding/Backtrack/15puzzle.cpp) **
+
 # # 4 Hamiltonian Cycle:
 Hamiltonian Path in an undirected graph is a path that visits each vertex exactly once. A Hamiltonian cycle is a Hamiltonian Path such that there is an edge from the last vertex to the first vertex of the Hamiltonian Path. Determine whether a given graph contains Hamiltonian Cycle or not. If it contains, then print the path. 
 ![Hamiltonian Cycle](http://mathworld.wolfram.com/images/eps-gif/HamiltonianPlatonicCycles_751.gif)
+
+** [CODE](https://github.com/SKKSaikia/Algorithms/blob/br2/Competitive%20Coding/Backtrack/HamiltonianCycle.cpp) **
 
 # Future : Most common and challenging Backtracking Problems in one repository.
