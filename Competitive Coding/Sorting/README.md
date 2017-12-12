@@ -78,7 +78,7 @@ __Properties__
 ###### View the algorithm in [action](https://www.toptal.com/developers/sorting-algorithms/shell-sort)
 
 ### Heap
-![alt text](https://en.wikipedia.org/wiki/Heapsort#/media/File:Heapsort-example.gif)
+![](https://upload.wikimedia.org/wikipedia/commons/4/4d/Heapsort-example.gif)
 
 From [Wikipedia](https://en.wikipedia.org/wiki/Heapsort):  Heapsort is a comparison-based sorting algorithm. Heapsort can be thought of as an improved selection sort: like that algorithm, it divides its input into a sorted and an unsorted region, and it iteratively shrinks the unsorted region by extracting the largest element and moving that to the sorted region. The improvement consists of the use of a heap data structure rather than a linear-time search to find the maximum.
 
