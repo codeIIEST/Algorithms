@@ -75,15 +75,35 @@ __Properties__
 * Best case performance O(n log n)
 * Average case performance depends on gap sequence
 
-####Radix Sorting
-From [Wikipedia](https://en.wikipedia.org/wiki/Radix_sort): radix sort is a non-comparative integer sorting algorithm that sorts data with integer keys by grouping keys by the individual digits which share the same significant position and value. A positional notation is required, but because integers can represent strings of characters (e.g., names or dates) and specially formatted floating point numbers, radix sort is not limited to integers. Radix sort dates back as far as 1887 to the work of Herman Hollerith on tabulating machines.
+###### View the algorithm in [action](https://www.toptal.com/developers/sorting-algorithms/shell-sort)
+
+### Heap
+![](https://upload.wikimedia.org/wikipedia/commons/4/4d/Heapsort-example.gif)
+
+From [Wikipedia](https://en.wikipedia.org/wiki/Heapsort):  Heapsort is a comparison-based sorting algorithm. Heapsort can be thought of as an improved selection sort: like that algorithm, it divides its input into a sorted and an unsorted region, and it iteratively shrinks the unsorted region by extracting the largest element and moving that to the sorted region. The improvement consists of the use of a heap data structure rather than a linear-time search to find the maximum.
+
+__Properties__
+* Worst case performance O(n log n)
+* Best case performance O(n log n)
+* Average case performance O(n log n)
+
+###### View the algorithm in [action](https://www.toptal.com/developers/sorting-algorithms/heap-sort)
+
+### Radix
+From [Wikipedia](https://en.wikipedia.org/wiki/Radix_sort): Radix sort is a non-comparative integer sorting algorithm that sorts data with integer keys by grouping keys by the individual digits which share the same significant position and value. A positional notation is required, but because integers can represent strings of characters (e.g., names or dates) and specially formatted floating point numbers, radix sort is not limited to integers. Radix sort dates back as far as 1887 to the work of Herman Hollerith on tabulating machines.
 
 __Properties__
 * Worst case performance O(wn)
 * Best case performance O(w + N)
 * Average case performance depends on gap sequence
 
-###### View the algorithm in [action](https://www.toptal.com/developers/sorting-algorithms/shell-sort)
+### Counting
+From [Wikipedia](https://en.wikipedia.org/wiki/Counting_sort): Counting sort is an algorithm for sorting a collection of objects according to keys that are small integers; that is, it is an integer sorting algorithm. It operates by counting the number of objects that have each distinct key value(k: max key value), and using arithmetic on those counts to determine the positions of each key value in the output sequence.
+
+__Properties__
+* Worst case performance O(n + k)
+* Best case performance O(n + k)
+* Average case performance O(n + k)
 
 ### Time-Compexity Graphs
 

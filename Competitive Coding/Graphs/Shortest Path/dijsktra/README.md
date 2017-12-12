@@ -9,10 +9,10 @@ Edsger W.Dijkstra
 Dijkstra thought about the shortest path problem when working at the Mathematical Center in Amsterdam in 1956 as a programmer to demonstrate capabilities of a new computer called ARMAC. His objective was to choose both a problem as well as an answer (that would be produced by computer) that non-computing people could understand. He designed the shortest path algorithm and later implemented it for ARMAC for a slightly simplified transportation map of 64 cities in the Netherlands (64, so that 6 bits would be sufficient to encode the city number).
  A year later, he came across another problem from hardware engineers working on the institute's next computer: minimize the amount of wire needed to connect the pins on the back panel of the machine. As a solution, he re-discovered the algorithm known as Prim's minimal spanning tree algorithm (known earlier to Jarník, and also rediscovered by Prim).
  Dijkstra published the algorithm in 1959, two years after Prim and 29 years after Jarník.
- 
- 
+
+
  **Algorithm**
- 
+
  Let the node at which we are starting be called the initial node. Let the distance of node Y be the distance from the initial node to Y. Dijkstra's algorithm will assign some initial distance values and will try to improve them step by step.
 
 Assign to every node a tentative distance value: set it to zero for our initial node and to infinity for all other nodes.
@@ -29,7 +29,7 @@ Otherwise, select the unvisited node that is marked with the smallest tentative 
 
 ---------------------------------------------------
 
-##Related Problems
+## Related Problems
 The functionality of Dijkstra's original algorithm can be extended with a variety of modifications. For example, sometimes it is desirable to present solutions which are less than mathematically optimal. To obtain a ranked list of less-than-optimal solutions, the optimal solution is first calculated. A single edge appearing in the optimal solution is removed from the graph, and the optimum solution to this new graph is calculated. Each edge of the original solution is suppressed in turn and a new shortest-path calculated. The secondary solutions are then ranked and presented after the first optimal solution.
 
 Dijkstra's algorithm is usually the working principle behind link-state routing protocols, OSPF and IS-IS being the most common ones.
@@ -47,16 +47,16 @@ Fast marching method can be viewed as a continuous version of Dijkstra's algorit
 
 ----------------------------------------------------------
 
-##Applications
+## Applications
 
 1. **Flight Agenda** -- A travel agent requests software for making an agenda of flights for clients. The agent has access to a data base with all airports and flights. Besides the flight number, origin airport and destination, the flights have departure and arrival time. Specifically the agent wants to determine the earliest arrival time for the destination given an origin airport and start time
 
 2. **Telephone Network** -- In a telephone network the lines have bandwidth, BW. We want to route the phone call via the highest BW.
- 
- 
+
+
  ----------------------------------------------
  **Source**
- 
+
  [Wikipedia](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
- 
+
  [Dijkstra](http://www.csl.mtu.edu/cs2321/www/newLectures/30_More_Dijkstra.htm)
