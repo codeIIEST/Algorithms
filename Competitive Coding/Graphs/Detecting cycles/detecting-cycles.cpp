@@ -35,8 +35,8 @@ private:
     vector<ll> rank;
     list<ll> *array;
 public:
-    graph(ll vertex,ll edges)
-    :vertex(vertex),edges(edges)
+    graph(ll vertices,ll edge)
+    :vertex(vertices),edges(edge)
     {
         array= new list<ll>[vertex];
         parent.assign(vertex,-1);
