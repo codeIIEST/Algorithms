@@ -30,3 +30,7 @@ int main()
         printf("%d is not a lucky no.", x);
     getchar();
 }
+
+/*output*/
+Output:
+5 is not a lucky no.
