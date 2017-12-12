@@ -73,7 +73,7 @@ void decryption(string msg)
 
         }
     }
-    cout <<"Decrypted Code=:"<< plain;
+    cout <<"Decrypted Code=:"<< plain<<endl;
 }
 //Driver program
 int main()
