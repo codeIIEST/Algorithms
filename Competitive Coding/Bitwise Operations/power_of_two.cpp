@@ -4,6 +4,7 @@
 Let, x = 4 = (100)2
 	 x - 1 = 3 = (011)2
 Let, x = 6 = (110)2
+
 	 x - 1 = 5 = (101)2
 	 where ()2 represents the binary representation of a number.
 
@@ -23,8 +24,8 @@ int main()
 {
 	int num=256;//Number to be checked whether is a power of 2 or not
 
-	if(num&(num-1)==0)//Checking the required condition as explained.
-		cout<<x<<"is a Power of 2"<<endl;
+	if (num && !(num & (num - 1)))//Checking the required condition as explained.
+		cout<<num<<" is a Power of 2"<<endl;
 	else 
-		cout<<x<<"is not a Power of 2"<<endl;
+		cout<<num<<" is not a Power of 2"<<endl;
 }
