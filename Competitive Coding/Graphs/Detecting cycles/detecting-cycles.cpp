@@ -35,7 +35,12 @@ private:
     vector<ll> rank;
     list<ll> *array;
 public:
-    graph(ll vertices,ll edge)
+    graph()
+    {
+        vertex=0;
+        edges=0;
+    }
+    graph(ll vertices=0,ll edge=0)
     :vertex(vertices),edges(edge)
     {
         array= new list<ll>[vertex];
