@@ -77,6 +77,18 @@ __Properties__
 
 ###### View the algorithm in [action](https://www.toptal.com/developers/sorting-algorithms/shell-sort)
 
+### Heap
+![alt text](https://en.wikipedia.org/wiki/Heapsort#/media/File:Heapsort-example.gif)
+
+From [Wikipedia](https://en.wikipedia.org/wiki/Heapsort):  Heapsort is a comparison-based sorting algorithm. Heapsort can be thought of as an improved selection sort: like that algorithm, it divides its input into a sorted and an unsorted region, and it iteratively shrinks the unsorted region by extracting the largest element and moving that to the sorted region. The improvement consists of the use of a heap data structure rather than a linear-time search to find the maximum.
+
+__Properties__
+* Worst case performance O(n log n)
+* Best case performance O(n log n)
+* Average case performance O(n log n)
+
+###### View the algorithm in [action](https://www.toptal.com/developers/sorting-algorithms/heap-sort)
+
 ### Radix
 From [Wikipedia](https://en.wikipedia.org/wiki/Radix_sort): Radix sort is a non-comparative integer sorting algorithm that sorts data with integer keys by grouping keys by the individual digits which share the same significant position and value. A positional notation is required, but because integers can represent strings of characters (e.g., names or dates) and specially formatted floating point numbers, radix sort is not limited to integers. Radix sort dates back as far as 1887 to the work of Herman Hollerith on tabulating machines.
 
