@@ -11,7 +11,7 @@ typedef struct
 {
     ll src;
     ll dest;
-}edge;
+}edge;//This is the structure that saves the source and destination of each edge since it is a directed edge.
 class Graph
 {
 private:
@@ -27,21 +27,21 @@ public:
         vertex=0;
         edges=0;
     }
-    Graph(ll vertices=0,ll edge=0)
+    Graph(ll vertices=0,ll edge=0)//this constructor initialises the list for the vertices.The parent array and their rank.
     :vertex(vertices),edges(edge)
     {
         array= new list<ll>[vertex];
         parent.assign(vertex,-1);
         rank.assign(vertex,0);
     }
-    ll find(ll v)
+    ll find(ll v)//This returns the parent of the given vertex
     {
         if(parent[v]==-1)
             return v;
         else
             find(parent[v]);
     }
-    void unions(ll x,ll y)
+    void unions(ll x,ll y)//This unites two vertex
     {
         ll xroot=find(x);
         ll yroot=find(y);
@@ -56,7 +56,7 @@ public:
             rank[yroot]++;
         }
     }
-    ll iscycle(ll x,ll y)
+    ll iscycle(ll x,ll y)//This tells weather the given edge form a cycle of not
     {
 
         ll xroot=find(x);
