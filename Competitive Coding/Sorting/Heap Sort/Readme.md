@@ -11,4 +11,5 @@ Heap sort algorithm is divided into two basic parts :
 Here, Time complexity of heapify is O(logn) and time complexity of BUILD-MAX-HEAP(A) is O(n) and we run max_heapify N−1 times in heap_sort function, therefore complexity of heap_sort function in each case (Best, worst and average) is O(nlogn).
 
 Time Complexity: O(nlogn)
+
 Space Complexity: O(1)
