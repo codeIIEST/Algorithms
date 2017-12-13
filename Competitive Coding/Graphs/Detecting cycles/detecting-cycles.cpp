@@ -22,11 +22,6 @@ private:
     vector<ll> rank;
     list<ll> *array;
 public:
-    Graph()
-    {
-        vertex=0;
-        edges=0;
-    }
     Graph(ll vertices=0,ll edge=0)//this constructor initialises the list for the vertices.The parent array and their rank.
     :vertex(vertices),edges(edge)
     {
