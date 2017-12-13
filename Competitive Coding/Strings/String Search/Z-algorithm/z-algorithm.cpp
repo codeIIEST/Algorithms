@@ -30,11 +30,10 @@ int main()
     int z_val[len]={0};
     int left =0;//left index of the z box
     int right =0;//right index of the z box
-    int curr =0;
     int count=0;//count of the match
     for(int i=1;i<len;i++)
     {
-        curr = i;
+        int curr = i;
         if(count>1)
         {
             left =i;
