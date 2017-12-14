@@ -1,7 +1,7 @@
 import java.util.*;
-class queue
+class Queue
 {
-	int q[], front, rear, size;
+	private int q[], front, rear, size;
 	
 	
 	/***** Constructor to initialize queue *****/
@@ -125,12 +125,10 @@ class queue
 				case 3: q1.display();
 					break;
 					
-				case 4: System.exit(0);
+				default: System.out.println("Wrong choice. Exitting.");
 					break;
-					
-				default: System.out.println("Wrong choice. Enter again!");
 			} //End switch
 		} //End do
-		while(true);
+		while(choice >= 1 && choice <= 4);
 	} //End main()
 } //End class
