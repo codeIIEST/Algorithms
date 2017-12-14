@@ -1,3 +1,4 @@
+package Data_Structures;
 import java.util.*;
 class Queue
 {
@@ -19,7 +20,7 @@ class Queue
 	
 	
 	/***** Fucntion to insert an item to queue *****/
-	void insert(int item)
+	private void insert(int item)
 	{ //Begin insert()
 		if(rear == (size-1)) //Checks if rear pointer has reached the last limit (Queue is completely full or not) 
 		{
@@ -47,7 +48,7 @@ class Queue
 	
 	
 	/***** Fucntion to delete an item from queue *****/
-	void delete()
+	private void delete()
 	{ //Begin delete()
 		
 		
@@ -76,7 +77,7 @@ class Queue
 	
 	
 	/***** Function to display the elements of the queue *****/
-	void display()
+	private void display()
 	{ //Begin display()
 		if(front == - 1 && rear == -1)
 		{
