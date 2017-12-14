@@ -1,0 +1,3 @@
+## **Morse Code**
+[Morse code](https://en.wikipedia.org/wiki/Morse_code) is a method of transmitting text information as a series of on-off tones, lights, or clicks that can be directly understood by a skilled listener or observer without special equipment.Each Morse code symbol represents either a text character (letter or numeral) or a prosign and is represented by a unique sequence of dots and dashes. The dot duration is the basic unit of time measurement in code transmission. The duration of a dash is three times the duration of a dot. Each dot or dash is followed by a short silence, equal to the dot duration.
+
