@@ -19,24 +19,24 @@ int main()
     }
     int cols = log(n)/log(2);//Cols represent the no of coloumns in the sparse table .
     int rows = n;//rows represent the no of rows in the sparse table
-    int stable[rows][cols+1];
+    int lookup[rows][cols+1];
     for(int i=0;i<=cols;i++)//This is the procedure to build a sparse table
     {
 
         for(int j=0;j<rows;j++)
         {
             if(i==0)
-                stable[j][i]=j;
+                lookup[j][i]=j;
             else
             {
 
                 if(j+pow(2,i)<=n)
                 {
 
-                    if(a[stable[j+(int)pow(2,i-1)][i-1]]>a[stable[j][i-1]])//This is the procedure to create a sparse table for range minimum query. This statement of code can be appropriately changed for another type of query.
-                    stable[j][i]=stable[j][i-1];
+                    if(a[lookup[j+(int)pow(2,i-1)][i-1]]>a[lookup[j][i-1]])//This is the procedure to create a sparse table for range minimum query. This statement of code can be appropriately changed for another type of query.
+                    lookup[j][i]=lookup[j][i-1];
                     else
-                        stable[j][i] = stable[j+(int)pow(2,i-1)][i-1];
+                        lookup[j][i] = lookup[j+(int)pow(2,i-1)][i-1];
 
                 }
             }
@@ -50,9 +50,9 @@ int main()
 
     int col = (int)(log(k)/log(2));//This represent the coloumn we first look for in the sparse table.
 
-    int min1 = a[stable[left-1][col]];
+    int min1 = a[lookup[left-1][col]];
     int remaining = k- pow(2,col);
-    int min2 = a[stable[left+remaining-1][col]];
+    int min2 = a[lookup[left+remaining-1][col]];
 
     cout<<"minimum in the given range is :"<<min(min1,min2)<<endl;
 
