@@ -1,0 +1,39 @@
+#include<bits/stdc++.h>
+#include<iomanip>
+using namespace std;
+#define f float
+void exponential(f x[], f y[], int n){
+    f Y[n],sumx=0,sumy=0,sumxy=0,sumx2=0;
+    double a,b,A;
+    for(int i=0;i<=n-1;i++)
+    {
+        Y[i]=log(y[i]);
+    }
+    for(int i=0;i<=n-1;i++)
+    {
+        sumx=sumx +x[i];
+        sumx2=sumx2 +x[i]*x[i];
+        sumy=sumy +Y[i];
+        sumxy=sumxy +x[i]*Y[i];
+
+    }
+    A=((sumx2*sumy -sumx*sumxy)*1.0/(n*sumx2-sumx*sumx)*1.0);
+    b=((n*sumxy-sumx*sumy)*1.0/(n*sumx2-sumx*sumx)*1.0);
+    a=exp(A);
+    printf("\n The curve is Y= %4.3fe^%4.3fX",a,b);
+}
+
+int main()
+{
+int i,n;
+cout<<"welcome to linear regression\n";
+cout<<"enter number of data you want to enter\n";
+cin>>n;
+f x[n],y[n];
+cout<<"enter x variables\n";
+for(i=0;i<n;++i) cin>>x[i];
+cout<<"enter y variables\n";
+for(i=0;i<n;++i) cin>>y[i];
+ exponential(x,y,n);
+return 0;
+}
