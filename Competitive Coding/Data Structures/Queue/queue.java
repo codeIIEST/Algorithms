@@ -111,7 +111,7 @@ class Queue
 		int choice;
 		do
 		{ //Begin do
-			System.out.println("\nEnter:\n1. Insert\n2. Delete\n3. Display\n4. Exit");
+			System.out.println("\nEnter:\n1. Insert\n2. Delete\n3. Display");
 			choice = sc.nextInt();
 			switch(choice)
 			{ //Begin switch
@@ -130,6 +130,6 @@ class Queue
 					break;
 			} //End switch
 		} //End do
-		while(choice >= 1 && choice <= 4);
+		while(choice >= 1 && choice <= 3);
 	} //End main()
 } //End class
