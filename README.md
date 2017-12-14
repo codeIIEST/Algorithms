@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 # Algorithms
 A Repository to store implementation of some of the famous Data Structures and Algorithms (mainly in C/C++/Java/Python) for everyone to learn and contribute.
+=======
+
+# Algorithms
+
+>>>>>>> 56b74e922bff38aee9cfff9e7cfde1c6610adc50
 
 <br/>
 
@@ -8,6 +14,7 @@ A Repository to store implementation of some of the famous Data Structures and A
 
 [![Join the chat at https://gitter.im/codeIIEST/Algorithms](https://badges.gitter.im/codeIIEST/Algorithms.svg)](https://gitter.im/codeIIEST/Algorithms?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+<<<<<<< HEAD
 
 
 
@@ -189,3 +196,40 @@ The encryption step performed by a Caesar cipher is often incorporated as part o
 
 
 [caesar]: https://upload.wikimedia.org/wikipedia/commons/4/4a/Caesar_cipher_left_shift_of_3.svg
+=======
+----------------------------------------------------------------------------------------------
+
+<img src="https://github.com/codeIIEST/Algorithms/blob/master/algocodeiiest.jpg" width="700">
+
+### About the Project
+
+This repository contains some of the most **intriguing and awesome algorithms** of daily life implemented in languages primarily in C/C++/Java/Python.
+
+--------------------------------------------------------------
+
+### Project Details
+The entire project is divided into 4 parts
+
+* Competitive Coding Algorithms and Data Structures
+* Security Algorithms
+* Machine Learning Algorithms
+* Statistical / Mathematical Algorithms
+
+-----------------------------------------------------------------
+
+### Contributing
+
+We would always encourage contribution from new developers. We hope with your contributions the project ecosystem will evolve much more in the future.
+
+For more details please see the ![Contributing Guidelines](https://github.com/codeIIEST/Algorithms/blob/master/CONTRIBUTING.md).
+
+We maintain a curated list of issues under the ![issues page](https://github.com/codeIIEST/Algorithms/issues). We encourage to start working with them. Please join the gitter channel for any doubts.
+
+---------------------------------------------------
+
+### Maintainers
+
+* [Manumeral](https://github.com/manumeral)
+* [smitbose](https://github.com/smitbose)
+
+>>>>>>> 56b74e922bff38aee9cfff9e7cfde1c6610adc50
