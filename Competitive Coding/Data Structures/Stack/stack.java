@@ -1,3 +1,4 @@
+package Data_Structures
 import java.util.*;
 class stack
 { //Begin class
@@ -20,7 +21,7 @@ class stack
 		
 		
 	/***** Fucntion to insert/push item to stack *****/
-	void push(int item)
+	private void push(int item)
 	{ //Begin push()
 	
 		if(top == (size-1)) //Checks if stack is full
@@ -39,7 +40,7 @@ class stack
 	
 	
 	/***** Function to delete/pop an item (topmost element) from stack *****/
-	void pop()
+	private void pop()
 	{ //Begin pop()
 		
 		if(top == -1) //Checks if stack is empty
@@ -56,7 +57,7 @@ class stack
 	
 	
 	/***** Function to peep (show the topmost element in stack) *****/
-	void peep()
+	private void peep()
 	{ //Begin peep()
 		if(top == -1)
 			System.out.println("No element to peep");
@@ -65,8 +66,10 @@ class stack
 			System.out.println("Peep: top ---> "+s[top]);
 	} //End peep()
 	
+	
+	
 	/***** Function to display the elements of stack *****/
-	void display()
+	private void display()
 	{ //Begin display()
 				
 		if(top == -1)
@@ -118,12 +121,10 @@ class stack
 				case 4: st.display();
 					break;
 					
-				case 5: System.exit(0);
+				default: System.out.println("Wrong choice. Exitting!");
 					break;
-					
-				default: System.out.println("Wrong choice. Enter again!");
 			} //End switch
 		} //End do
-		while(true);
+		while(choice >= 1 && choice <= 4);
 	} //End main()
 } //End class
