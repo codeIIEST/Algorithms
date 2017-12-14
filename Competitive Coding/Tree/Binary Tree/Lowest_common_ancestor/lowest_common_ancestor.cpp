@@ -1,4 +1,4 @@
-#include<iostream>
+#include<iostream>
 #include<vector>
 using namespace std;
 #define nullptr 0
@@ -29,8 +29,7 @@ public:
         else
         {
             node* temp=root;
-            node* newnode=new node;
-            newnode=searchnode(x,temp);
+            node* newnode=searchnode(x,temp);
             if(x>newnode->val)
             {
                 newnode->rightchild=new node;
