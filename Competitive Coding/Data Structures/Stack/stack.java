@@ -103,7 +103,7 @@ class stack
 		int choice;
 		do
 		{ //Begin do
-			System.out.println("\nEnter:\n1. Push\n2. Pop\n3. Peep\n4. Display \n5. Exit");
+			System.out.println("\nEnter:\n1. Push\n2. Pop\n3. Peep\n4. Display");
 			choice = sc.nextInt();
 			switch(choice)
 			{ //Begin switch
