@@ -22,3 +22,4 @@ Thanks for all your contributions :heart: :octocat:
 |[Rahul Arulkumaran](https://github.com/rahulkumaran)| [#159](https://github.com/codeIIEST/Algorithms/pull/159) | CLOSED |
 |[Rahul Arulkumaran](https://github.com/rahulkumaran)| [#174](https://github.com/codeIIEST/Algorithms/pull/174) | MERGED |
 |[Rahul Arulkumaran](https://github.com/rahulkumaran)| [#206](https://github.com/codeIIEST/Algorithms/pull/206) | OPEN |
+|[Rahul Arulkumaran](https://github.com/rahulkumaran)| [#207](https://github.com/codeIIEST/Algorithms/pull/46) | OPEN |
