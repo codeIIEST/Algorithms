@@ -5,7 +5,8 @@
 Thanks for all your contributions :heart: :octocat:
 
 
-[prateekiiest](https://github.com/prateekiiest) : KWOC Mentor
+[prateekiiest](https://github.com/prateekiiest) : KWOC Mentor <br>
+[Rahul Arulkumaran](https://github.com/rahulkumaran) : KWOC Contributor <br>
 
 | Github username      | Pull Request           | Status  |
 | ------------- |:-------------:| -----:|
