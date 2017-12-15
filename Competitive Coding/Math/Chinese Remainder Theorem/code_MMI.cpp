@@ -1,6 +1,5 @@
 // Iterative C++ program to find modular inverse using extended Euclid algorithm.
-// Returns modulo inverse of a with respect to m using
-// extended Euclid Algorithm
+// Returns modulo inverse of a with respect to m using extended Euclid Algorithm.
 //Time Complexity of this method is O(Log m).
 // Assumption: a and m are coprimes, i.e., gcd(a, m) = 1
 
