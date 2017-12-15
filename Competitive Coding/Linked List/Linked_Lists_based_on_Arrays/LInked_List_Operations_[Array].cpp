@@ -9,7 +9,7 @@ class LinearList
 		T *element;
 	public:
 		explicit LinearList(int MaxLinearSize=10);           //To create  a Linked List [A Constructor]
-		LinearList(LinearList L);                            //A Copy Constructor
+		LinearList(const LinearList &L);                            //A Copy Constructor
 		~LinearList(){delete[]element;}                      //To delete the Linked List from the memory [A Destructor] 
 		int isEmpty()const{return length==0;}                //To check if the Linked List is empty
 		int Length()const{return length;}                    //To find the length of a Linked List
