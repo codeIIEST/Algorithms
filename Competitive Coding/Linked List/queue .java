@@ -48,7 +48,7 @@ ptr=ptr.link;
 public static void main(String args[])
 {
 
-queue t=new queue();
+Queue t=new Queue();
 t.push(1);
 t.push(2);
 t.push(3);
