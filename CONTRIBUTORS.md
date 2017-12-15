@@ -16,3 +16,5 @@ Thanks for all your contributions :heart: :octocat:
 |[Rahul Arulkumaran](https://github.com/rahulkumaran)| [#206](https://github.com/codeIIEST/Algorithms/pull/206), [#207](https://github.com/codeIIEST/Algorithms/pull/207) | OPEN |
 |[Abhishek Nalla](https://github.com/abhisheknalla)| [#129](https://github.com/codeIIEST/Algorithms/pull/129)| MERGED | 
 [#147](https://github.com/codeIIEST/Algorithms/pull/147)| MERGED | [#204](https://github.com/codeIIEST/Algorithms/pull/204)| MERGED |
+| [Zanark ( Debashish Mishra )](https://github.com/Zanark) | [PR #222](https://github.com/codeIIEST/Algorithms/pull/222) , [PR #146](https://github.com/codeIIEST/Algorithms/pull/146) , [PR #135](https://github.com/codeIIEST/Algorithms/pull/135) | OPEN , MERGED , CLOSED|
+
