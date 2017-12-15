@@ -1,13 +1,13 @@
-class Node
+public class Node
 {
-int data;
-Node link;
+public int data;
+public Node link;
 }
-class Queue
+public class Queue
 {
-Node rear=null;
-Node top=null;
-void push(int x)
+public Node rear=null;
+public Node top=null;
+public void push(int x)
 {
 
 Node temp=new Node();
@@ -31,12 +31,12 @@ temp.link=null;
 //System.out.print(temp.data);
 }
 }
-void pop()
+public void pop()
 {
 rear=rear.link;
 //System.out.print("n");
 }
-void display()
+public void display()
 {
 Node ptr=rear;
 while(ptr!=null)
