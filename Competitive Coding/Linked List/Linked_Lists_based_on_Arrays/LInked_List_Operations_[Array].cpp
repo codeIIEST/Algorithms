@@ -8,15 +8,15 @@ class LinearList
 		int MaxSize;
 		T *element;
 	public:
-		LinearList(int MaxLinearSize=10);
-		~LinearList(){delete[]element;}
-		int isEmpty()const{return length==0;}
-		int Length()const{return length;}
-		int Find(int k,T&x)const;
-		int Search(const T&x)const;
-		void Delete(int k,T&x);
-		void Insert(int k,const T&x);
-		void Output()const;
+		LinearList(int MaxLinearSize=10);           //To create  a Linked List [A Constructor]
+		~LinearList(){delete[]element;}             //To delete the Linked List from the memory [A Destructor] 
+		int isEmpty()const{return length==0;}       //To check if the Linked List is empty
+		int Length()const{return length;}           //To find the length of a Linked List
+		int Find(int k,T&x)const;                   //To get the Value at the given position of the Linked List 
+		int Search(const T&x)const;                 //To check if an element is present in the Linked List 
+		void Delete(int k,T&x);                     //To delete a specific element from a Linked List 
+		void Insert(int k,const T&x);               //To insert an element onto a Linked List 
+		void Output()const;                         //To display the Linked List 
 };
 	template<class T>
 LinearList<T>::LinearList(int MaxListSize)
