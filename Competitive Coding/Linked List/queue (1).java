@@ -1,16 +1,16 @@
-class node
+class Node
 {
 int data;
-node link;
+Node link;
 }
-class queue
+class Queue
 {
-node rear=null;
-node top=null;
+Node rear=null;
+Node top=null;
 void push(int x)
 {
 
-node temp=new node();
+Node temp=new Node();
 temp.data=x;
 if(top==null)
 {
@@ -21,7 +21,7 @@ temp.link=null;
 }
 else
 {
-node ptr=rear;
+Node ptr=rear;
 while(ptr.link!=null)
 {
 ptr=ptr.link;
@@ -38,7 +38,7 @@ rear=rear.link;
 }
 void display()
 {
-node ptr=rear;
+Node ptr=rear;
 while(ptr!=null)
 {
 System.out.println(ptr.data+" ");
