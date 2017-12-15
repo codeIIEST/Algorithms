@@ -80,11 +80,11 @@ int main()
         else
         {
             int val = crossprod(points,current,target,i);
-            if(val > 0)//If the cross prod value is greater than zero than this means that we the point i is in the left side of the line segement that passes through the target and current so now the target needs to be changed. 
+            if(val > 0)//If the cross prod value is greater than zero than this means that we the point i is in the left side of the line segement that passes through the target and current so now the target needs to be changed.
             {
 
                 target = i;
-                colinear.clear();//we also need to clear the colinear array as the target itself is changed. 
+                colinear.clear();//we also need to clear the colinear array as the target itself is changed.
             }
             if(val  == 0)
             {
@@ -112,7 +112,7 @@ int main()
     }
 int len = result.size();
  set<int> :: iterator i= result.begin();
-for(;i!=result.end();i++)
+for(;i!=result.end();++i)
 {
     cout<<points[(*i)].x<<" "<<points[(*i)].y<<endl;
 }
