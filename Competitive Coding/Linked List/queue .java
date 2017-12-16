@@ -10,7 +10,6 @@ public Node rear=null;
 public Node top=null;
 public void push(int x)
 {
-
 Node temp=new Node();
 temp.data=x;
 if(top==null)
