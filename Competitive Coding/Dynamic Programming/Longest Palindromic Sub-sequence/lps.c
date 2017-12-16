@@ -41,7 +41,7 @@ int main()
 {
 	printf("Enter your string\n");
 	char str[MAXLEN];
-	scanf("100%s",str);
+	scanf("%100s",str);
     printf ("The lnegth of the Longest Palindromic Sub-sequence is %d", lps(str));
     getchar();
     return 0;
