@@ -45,5 +45,4 @@ int main()
 	int *suffixArr=buildSuffixArray(txt,n);
 	cout<<"The suffix array is : \n";
 	printArr(suffixArr,n);
-	return 0;
 }
