@@ -27,18 +27,15 @@ class Queue
 			System.out.println("Queue Overflow");
 		}
 		
-		else 
+		elseif(front == -1 && rear == -1) //Checks if queue is empty to insert the very first element
 		{
-			if(front == -1 && rear == -1) //Checks if queue is empty to insert the very first element
-			{
-				front = 0; rear = 0;
-			}
+			front = 0; rear = 0;				
+			q[rear] = item;
+		}
 			
-			else
-			{
-				rear+=1;
-			}
-			
+		else
+		{
+			rear+=1;
 			q[rear] = item;
 		}
 		
@@ -57,20 +54,20 @@ class Queue
 				System.out.println("Queue Underflow");	
 			}
 			
-			else
-			{	
+	
+				
+				
+			elseif(front == rear) //Checks if only one element is present
+			{
 				System.out.println("Deleted element:\t"+q[front]);
+				front = -1; rear = -1;				
+			}
 				
-				if(front == rear) //Checks if only one element is present
-				{
-					front = -1; rear = -1;
-				}
-				
-				else
-				{
-					front += 1;
-				}
-			} 
+			else
+			{
+				System.out.println("Deleted element:\t"+q[front]);					
+				front += 1;
+			}			
 		
 	} //End delete()
 	
