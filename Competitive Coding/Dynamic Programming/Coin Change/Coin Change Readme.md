@@ -1,7 +1,7 @@
 Problem :-
 Given a value N and the values of different denomination,find the number of ways to make changes for N cents,if we have infinite supply of all denominations.
 
-Input : Size of an array and all the values in the array.
+Input : Size of an array and all the values in the array and the number of cents.
 
 Output : An integer that denotes the  number of ways to make change.
 
