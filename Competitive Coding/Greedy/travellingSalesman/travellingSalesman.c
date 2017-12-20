@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include<stdio.h>
 #include<limits.h>
 #include<math.h>
 #define size 10 //maximum 10 cities
@@ -13,9 +13,10 @@ int compute(int start,int set)
 	{
 		mask=(npow-1)-(1<<i);
 		masked=set&mask;
-		if(masked!=set)
+		int xx=masked;
+		if(xx!=set)
 		{
-			temp=adj[start][i]+compute(i,masked);
+			temp=adj[start][i]+compute(i,xx);
 			if(temp<result)
 				result=temp,p[start][set]=i;
 		}
@@ -43,7 +44,8 @@ void TSP()
 	getpath(0,npow-2);
 	printf("0\n");
 }
-int main(void) {
+int main(void)
+{
 	int i,j;
 	printf("Enter number of cities\n");
 	scanf("%d",&n);
