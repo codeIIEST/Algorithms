@@ -1,10 +1,10 @@
-class p21
+class P21
 { //Begin class
 
 
 	/***** Function to calculate the sum of proper divisors or factors *****/
-	static int sum_factors(int num)
-	{ //Begin sum_factors()
+	static int sumFactors(int num)
+	{ //Begin sumFactors()
 		int sum = 0;
 		
 		for(int i = 1; i<num; i++)
@@ -14,21 +14,23 @@ class p21
 		} //End for
 		
 		return sum;
-	} //End sum_factors()
+	} //End sumFactors()
 	
 	
 	
 	
 	public static void main(String args[])
 	{ //Begin main()
-		int sum_amicable = 0, x = 0, y = 0;
+		int sum_amicable = 0; 
+		int x = 0; 
+		int y = 0;
 		
 		
 		for(int n = 1; n<=10000; n++)
 		{ //Begin for
 			
-			x = sum_factors(n); //Sum of factors or divisors of n
-			y = sum_factors(x); //Sum of factors or divisors of x
+			x = sumFactors(n); //Sum of factors or divisors of n
+			y = sumFactors(x); //Sum of factors or divisors of x
 						
 						
 			/*** 
