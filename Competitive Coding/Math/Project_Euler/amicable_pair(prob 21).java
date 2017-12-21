@@ -1,9 +1,10 @@
+package Euler
 class P21
 { //Begin class
 
 
 	/***** Function to calculate the sum of proper divisors or factors *****/
-	static int sumFactors(int num)
+	public static int sumFactors(int num)
 	{ //Begin sumFactors()
 		int sum = 0;
 		
