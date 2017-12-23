@@ -1,6 +1,5 @@
 # Returns value of Binomial Coefficient C(n, k)
 def binomialCoefficient(n, k):
- 
     # since C(n, k) = C(n, n - k)
     if (k > n - k):
         k = n - k
