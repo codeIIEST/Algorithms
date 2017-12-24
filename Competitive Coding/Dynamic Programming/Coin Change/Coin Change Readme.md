@@ -10,13 +10,13 @@ Output :-
 ---
 An integer that denotes the  number of ways to make change.
 
-Language : **C++**
+Language : `C++`
 ---
-Algorithm Paradigm : **Dynamic Programming**
+Algorithm Paradigm : `Dynamic Programming`
 ---
-Time Complexity : **O(N*M)**
+Time Complexity :  `O(N*M)`
 ---
-Space Complexity : **O(N*M)**
+Space Complexity : `O(N*M)`
 ---
 Working :-
 ---
