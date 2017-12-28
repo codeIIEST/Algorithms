@@ -30,19 +30,23 @@ int *buildSuffixArray(char *txt,int n)
 
 	return suffixArr;
 }
-
+/*
 void printArr(int* arr,int n)
 {
 	for(int i=0;i<n;i++)
 		cout<< *arr++ <<" ";
 	cout<<"\n";
 }
-
+*/
 int main()
 {
 	char txt[] = "banana";
 	int n = strlen(txt);
 	int *suffixArr=buildSuffixArray(txt,n);
 	cout<<"The suffix array is : \n";
-	printArr(suffixArr,n);
+	//printArr(suffixArr,n);
+	for(int i=0;i<n;i++)
+		cout<< *suffixArr++ <<" ";
+	cout<<"\n";
+	return 0;
 }
