@@ -31,10 +31,10 @@ int *buildSuffixArray(char *txt,int n)
 	return suffixArr;
 }
 
-void printArr(int arr[],int n)
+void printArr(int* arr,int n)
 {
 	for(int i=0;i<n;i++)
-		cout<<arr[i]<<" ";
+		cout<< *arr++ <<" ";
 	cout<<"\n";
 }
 
