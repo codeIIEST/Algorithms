@@ -1,52 +1,28 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-struct suffix
+void Suff_Arr(string s)
 {
-	int index;
-	char *suff;
-};
-
-int cmp(struct suffix a, struct suffix b)
-{
-	return strcmp(a.suff,b.suff) < 0?1:0;
+    map<string,int> m;
+    
+    vector<string> v;
+    for(int i = 0; i < s.size();i++)
+    {
+        m[s.substr(i,s.size()-i)] = i;
+        v.push_back(s.substr(i,s.size()-i));
+    }
+    sort(v.begin(),v.end());
+    for(int i = 0; i < v.size();i++)
+    {
+        cout << m[v[i]] <<" ";
+    }
+  cout<<"\n";
 }
 
-int *buildSuffixArray(char *txt,int n)
-{
-	struct suffix suffixes[n];
-
-	for(int i=0;i<n;i++)
-	{
-		suffixes[i].index=i;
-		suffixes[i].suff = (txt+i);
-	}
-	sort(suffixes,suffixes+n,cmp);
-	int *suffixArr = new int[n];
-	for(int i=0;i<n;i++)
-	{
-		suffixArr[i]=suffixes[i].index;
-	}
-
-	return suffixArr;
-}
-/*
-void printArr(int* arr,int n)
-{
-	for(int i=0;i<n;i++)
-		cout<< *arr++ <<" ";
-	cout<<"\n";
-}
-*/
 int main()
 {
-	char txt[] = "banana";
-	int n = strlen(txt);
-	int *suffixArr=buildSuffixArray(txt,n);
-	cout<<"The suffix array is : \n";
-	//printArr(suffixArr,n);
-	for(int i=0;i<n;i++)
-		cout<< *suffixArr++ <<" ";
-	cout<<"\n";
-	//return 0;
+    string s;
+    cin >> s;
+    Suff_Arr(s);
+    return 0;
 }
