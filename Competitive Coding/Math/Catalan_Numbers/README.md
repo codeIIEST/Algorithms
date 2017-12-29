@@ -1,8 +1,8 @@
-The 2 different programs in this folder contain the same implementation!
+The two different programs in this folder contain the same implementation!
 The programs basically are a python implementation of the Catalan Numbers.
 They're similar to Fibonacci (very slightly)
 
-The 2 different implementations vary only in terms of time taken!<br>
+The two different implementations vary only in terms of time taken!<br>
 Basically we can implement in 3 different ways!<br>
 
 * Recursively - Exponential time complexity<br>
