@@ -11,5 +11,5 @@ def catalan(n):		#Function that finds catalan numbers
     c = binCoeff(2*n, n)	#Finding value of c by calling the binCoeff function
     return c/(n + 1)		#This is the final catalan number
 
-for i in range (5):	#finds 1st 5 catalan numbers
-    print (catalan(i))	#Prints the Catalan numbers
+if __name__=='__main__':
+	print "The 10th catalan number is:",catalan(9)
