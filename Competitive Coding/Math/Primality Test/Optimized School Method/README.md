@@ -5,17 +5,17 @@ Examples of first few prime numbers are {2, 3, 5, 7,...}
 
 Examples:
 
-Input:  n = 11
+**Input:**  n = 11  
 
-Output: true
+**Output:** true
 
-Input:  n = 15
+**Input:**  n = 15
 
-Output: false
+**Output:** false
 
-Input:  n = 1
+**Input:**  n = 1
 
-Output: false
+**Output:** false
 
 A simple solution is to iterate through all numbers from 2 to n-1 and for every number check if it divides n. If we find 
 any number that divides, we return false.   Instead of checking till n,  we can check till √n because a larger factor of n 
