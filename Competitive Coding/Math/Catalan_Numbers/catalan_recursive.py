@@ -6,5 +6,5 @@ def catalan_numbers(n):
         res += catalan_numbers(i) * catalan_numbers(n-i-1)	#The recursive function call
     return res
 
-for i in range(5):	#Implements the algo and finds the first 5 catalan numbers
-    print catalan_numbers(i)
+if __name__=='__main__':
+	print "The 10th catalan number is:",catalan(9)
