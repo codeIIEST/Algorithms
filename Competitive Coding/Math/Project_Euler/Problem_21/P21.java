@@ -1,4 +1,4 @@
-package Problem_21;
+package problem_21;
 class P21
 { //Begin class
 
