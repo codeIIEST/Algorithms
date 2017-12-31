@@ -55,6 +55,8 @@ int main()
 			max=temp1[i]+temp2[i]-1;
 	}	
 
+	cout<<endl;
+	
 	cout<<"The longest Bitonic Subsequence is of length : "<<max<<endl;//Printing the longest length of such sequence.
 
 	return 0;
