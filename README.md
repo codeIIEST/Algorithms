@@ -11,7 +11,8 @@
 
 ----------------------------------------------------------------------------------------------
 
-<img src="https://github.com/codeIIEST/Algorithms/blob/master/algocodeiiest.jpg" width="700">
+
+![](https://github.com/codeIIEST/Algorithms/blob/master/algocodeiiest.jpg)
 
 ### About the Project
 
@@ -33,9 +34,9 @@ The entire project is divided into 4 parts
 
 We would always encourage contribution from new developers. We hope with your contributions the project ecosystem will evolve much more in the future.
 
-For more details please see the ![Contributing Guidelines](https://github.com/codeIIEST/Algorithms/blob/master/CONTRIBUTING.md).
+For more details please see the [Contributing Guidelines](https://github.com/codeIIEST/Algorithms/blob/master/CONTRIBUTING.md).
 
-We maintain a curated list of issues under the ![issues page](https://github.com/codeIIEST/Algorithms/issues). We encourage to start working with them. Please join the gitter channel for any doubts.
+We maintain a curated list of issues under the [issues page](https://github.com/codeIIEST/Algorithms/issues). We encourage to start working with them. Please join the gitter channel for any doubts.
 
 ---------------------------------------------------
 
