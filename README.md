@@ -14,9 +14,17 @@
 
 ![](https://github.com/codeIIEST/Algorithms/blob/master/algocodeiiest.jpg)
 
+### What's is this Repository?
+If you are completely new to programming I would suggest you to implement code from data structure(https://github.com/ashubly25/Algorithms-1/tree/master/Competitive%20Coding/Data%20Structures).
+
+
 ### About the Project
 
-This repository contains some of the most **intriguing and awesome algorithms** of daily life implemented in languages primarily in C/C++/Java/Python.
+This repository contains some of the most **intriguing and awesome algorithms** of daily life implemented in languages primarily in 
+*C
+*C++
+*Java
+*Python
 
 --------------------------------------------------------------
 
