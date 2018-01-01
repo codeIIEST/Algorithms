@@ -3,9 +3,9 @@ Given a number n, check if it is prime or not.  This method is a probabilistic m
 Fermat's Little Theorem:
 If n is a prime number, then for every a, 1 <= a < n,
 
-a^n-1 = 1 mod (n)
+a^n-1 ~ 1 mod (n)
  OR 
-a^n-1 % n = 1 
+a^n-1 % n ~ 1 
  
 
 Example:
