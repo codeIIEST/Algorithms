@@ -16,7 +16,11 @@
 
 ### About the Project
 
-This repository contains some of the most **intriguing and awesome algorithms** of daily life implemented in languages primarily in C/C++/Java/Python.
+This repository contains some of the most **intriguing and awesome algorithms** of daily life implemented in languages primarily in 
+* C
+* C++
+* Java
+* Python
 
 --------------------------------------------------------------
 
