@@ -1,31 +1,65 @@
-/* Part of Cosmos by OpenGenus Foundation */
 #include <iostream>
-#include <vector>
-#include <algorithm>
+using namespace std;
 
-void bubble_sort(std::vector<int> &v)
-{
-	for(int i=0; i < v.size(); ++i)
-		for(int j=i+1; j < v.size(); ++j)
-		{
-			if (v[i] > v[j])
-				std::swap(v[i],v[j]);
-		}
+void bubbleSort(int array[], int size, int order){
+
+  if(order == 1){
+    for(int i=0; i < size-1; i++){
+      int flag = 0;
+
+      for(int j=0; j<size-1-i; j++){
+        if(array[j] > array[j+1]){
+          swap(array[j+1], array[j]);
+          flag = 1;
+        }
+      }
+      if(flag == 0){
+        break;
+      }
+    }
+  }
+
+  else if(order == 2){
+    for(int i=0; i < size-1; i++){
+      int flag = 0;
+
+      for(int j=0; j<size-1-i; j++){
+        if(array[j] < array[j+1]){
+          swap(array[j+1], array[j]);
+          flag = 1;
+        }
+      }
+      if(flag == 0){
+        break;
+      }
+    }
+  }
+
 }
-int main()
-{
-	std::vector<int> input_array;
-	std::cout<<"Enter the number of items in the array: ";
-	int array_size;
-	std::cin>>array_size;
-	for(int i=0;i<array_size;i++){
-		int input_number;
-		std::cin>>input_number;
-		input_array.push_back(input_number);
-	}
-	bubble_sort(input_array);
-	for(auto x :input_array)
-		std::cout<<x<<" ";
-	std::cout<<"\n";
-	return 0;
+
+int main() {
+  int size;
+  int order;
+
+  cout << "Enter the size of the array:" << endl;
+	cin >> size;
+
+	int array[size];
+
+	cout << "Enter the elements of the array:" << endl;
+	for(int i = 0; i < size; i++){
+	  cin >> array[i];
+  }
+
+  cout << "What type of ordering do you want: \n 1 - Ascending \n 2 - Descending" << endl;
+  cin >> order;
+
+	bubbleSort(array, size, order);
+
+	cout << "The sorted array is:" <<endl;
+	for (int i = 0; i < size; i++) {
+		cout << array[i] << " ";
+  }
+
+  return 0;
 }
