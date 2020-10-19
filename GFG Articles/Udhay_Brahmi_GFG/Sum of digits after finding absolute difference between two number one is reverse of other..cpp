@@ -27,18 +27,12 @@ using namespace std;
 int main() {
 	string n="24817",numb1="",numb2="";
 	float length_of_number=n.length();
-	for(int i=0;i<ceil(length_of_number/2);i++){
-	    numb1+=n[i];
-	}
+	for(int i=0;i<ceil(length_of_number/2);i++) numb1+=n[i];
 	//numb1=248
-	for(int i=(n.length()-1);i>=floor(length_of_number/2);i--){
-	    numb2+=n[i];
-	}
+	for(int i=(n.length()-1);i>=floor(length_of_number/2);i--) numb2+=n[i];
 	//numb2=718
 	int sum=0;
-	for(int i=0;i<numb1.length();i++){
-	    sum+=abs(numb1[i]-numb2[i]);
-	}
+	for(int i=0;i<numb1.length();i++) sum+=abs(numb1[i]-numb2[i]);
 	cout<< (2*sum) <<endl;
 	return 0;
 }
