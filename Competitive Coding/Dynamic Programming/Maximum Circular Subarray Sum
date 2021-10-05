@@ -1,0 +1,65 @@
+// Program to calculate Maximum Circular Subarray Sum
+
+#include<bits/stdc++.h>
+using namespace std;
+
+// Kadane Algorithm to find the Maximum Sum of continuous elements in an array 
+int kadaneMax(int arr[], int n) {
+  int ans = arr[0], prevBest = arr[0];
+  for(int i=1; i<n; i++) {
+    prevBest = max(prevBest + arr[i], arr[i]);
+    ans = max(ans, prevBest);
+  }
+  return ans;
+}
+
+
+// Kadane Algorithm to find the Minimum Sum of continuous elements in an array 
+int kadaneMin(int arr[], int n) {
+  int ans = arr[0], prevBest = arr[0];
+  for(int i=1; i<n; i++) {
+    prevBest = min(prevBest + arr[i], arr[i]);
+    ans = min(ans, prevBest);
+  }
+  return ans;
+}
+
+// Function to calculate Maximum sum
+int MaxCircularSubarraySum(int arr[], int n) {
+
+  // Count the number of negative elements in array
+  int count = 0;
+  
+  // Store the total sum of all the elements of array
+  int TotalSum = 0;
+  
+  for(int i=0; i<n; i++) {
+    if(arr[i] < 0) {
+      count++;
+    }
+    TotalSum = TotalSum + arr[i];
+  }
+  
+  // Here we are using inverted sum trick 
+  // Maximum sum of circular array can be Max of
+  // case 1: maximum sum of acyclic array
+  // case 2: total - minimum sum of acyclic array
+  
+  if(count == n) {    // Edge case if all elements are negative
+    return kadaneMax(arr, n);
+  }
+  else {
+    return max(kadaneMax(arr, n), TotalSum - kadaneMin(arr, n));
+  }
+}
+
+int main() {
+  int n;  // size of array
+  cin >> n;
+  int arr[n];
+  for(int i=0; i<n; i++) {
+    cin >> arr[i];
+  }
+  cout << MaxCircularSubarraySum(arr, n); // print maxSum
+  return 0;
+}
