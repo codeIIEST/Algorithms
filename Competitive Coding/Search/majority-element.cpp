@@ -1,6 +1,7 @@
 // C++ implementation of Boyer-Moore Majority Voting Algorithm
 #include <iostream>
 using namespace std;
+
 // Function to find majority element
 int findMajority(int arr[], int n)
 {
@@ -21,15 +22,15 @@ int findMajority(int arr[], int n)
     int count = 0;
     // Checking if majority candidate occurs more than n/2
     // times
-    for (i = 0; i < n; i++) {
+    for (i = 0; i < n; i++)
         if (arr[i] == candidate)
             count++;
-    }
  
     if (count > n / 2)
         return candidate;
     return -1;
 }
+
 int main()
 {
     int arr[] = { 1, 1, 1, 1, 2, 3, 4 };
